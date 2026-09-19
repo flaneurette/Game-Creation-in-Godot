@@ -1,21 +1,22 @@
 # Tree Creation in Blender
 
-## 1. Enable the Sapling Tree Gen add-on
+## Enable the Sapling Tree Gen add-on
 
 Sapling Tree Gen is an add-on, so it may need to be switched on first.
 
 - Blender 4.1 and older: Edit > Preferences > Add-ons, search "Sapling" and tick the box.
 - Blender 4.2 and newer: Edit > Preferences > Get Extensions, search "Sapling Tree Gen" and install it.
 
-## 2. Create the tree
+## Create the tree
 
 1. Hover your mouse over the 3D viewport and press **Shift+A**.
 2. Choose Curve > Sapling Tree Gen (in some versions the entry is called "Add Tree").
-3. A basic tree appears. Open the "Adjust Last Operation" panel at the bottom-left of the viewport.
+3. A basic tree appears. 
+4. Open the panel "> Sapling: Add Tree" or "Adjust Last Operation" panel at the bottom-lower-left of the viewport. 
 
-> The panel only stays editable until you do something else, so tweak the tree straight away.
+This is a small rectangular box at the left in the viewport. The panel only stays editable until you do something else, so tweak the tree straight away.
 
-## 3. Customize the tree
+## Customize the tree
 
 | Tab | What it does |
 | --- | --- |
@@ -23,11 +24,11 @@ Sapling Tree Gen is an add-on, so it may need to be switched on first.
 | Geometry | Bevel (trunk thickness and smoothness), branch levels, scale |
 | Branch Growth | How the branches spread out and curve |
 | Branch Splitting | How often branches fork |
-| Leaves | Tick **Show Leaves**, then set leaf count and shape (off by default) |
+| Leaves | Tick Show Leaves, then set leaf count and shape (off by default) |
 
-Change the **seed** value to get a different variation of the same tree.
+Change the seed value to get a different variation of the same tree.
 
-## 4. Add materials
+## Add materials
 
 The trunk and the leaves are separate objects, so each needs its own material.
 
@@ -45,7 +46,7 @@ The trunk and the leaves are separate objects, so each needs its own material.
 3. For realistic leaves, use a leaf image texture with an alpha channel, and connect its Alpha to the Principled BSDF Alpha input.
 4. Optionally add a little Subsurface or Transmission so light passes through the leaves.
 
-## 5. Make a forest (scattering many trees)
+## Make a forest (scattering many trees)
 
 **Quick method: duplicate**
 
