@@ -50,7 +50,7 @@ The trunk and the leaves are separate objects, so each needs its own material.
 
 File > Export > Export as .FBX, .OBJ or .GLB
 
-#### Make a forest (scattering many trees)
+### Make a forest (scattering many trees)
 
 **Quick method: duplicate**
 
@@ -68,3 +68,5 @@ File > Export > Export as .FBX, .OBJ or .GLB
 
 - Lower the Sapling bevel resolution to keep the polygon count down when you have many trees.
 - Convert a tree to a mesh with Object > Convert > Mesh if you need to edit it further.
+- If an imported tree has a lot of vertexes, then use: Inspector > Modifier > Decimate to lower the vertexes.
+- Keep a tree for a computer game small: 1-5MB
