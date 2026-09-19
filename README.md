@@ -2,9 +2,11 @@
 
 in Godot 4.7+
 
+> Note: this is a living document, it might change each time we progress in our game creation. It is therefore not finished, unless we state it here.
+
 ## Scene Layout
 
-Note: In our case, backgrounds are generated procedurally through a script. Thus, there is no specific nodeItem for it.
+> Note: In our case, backgrounds are generated procedurally through a script. Thus, there is no specific nodeItem for it.
 
 ```
 Node3D.tscn – script: WeatherManagement.gd > Then drop “Player” on the Follow Target param.
