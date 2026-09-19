@@ -1,13 +1,13 @@
 # Tree Creation in Blender
 
-## Enable the Sapling Tree Gen add-on
+#### Enable the Sapling Tree Gen add-on
 
 Sapling Tree Gen is an add-on, so it may need to be switched on first.
 
 - Blender 4.1 and older: Edit > Preferences > Add-ons, search "Sapling" and tick the box.
 - Blender 4.2 and newer: Edit > Preferences > Get Extensions, search "Sapling Tree Gen" and install it.
 
-## Create the tree
+#### Create the tree
 
 1. Hover your mouse over the 3D viewport and press **Shift+A**.
 2. Choose Curve > Sapling Tree Gen (in some versions the entry is called "Add Tree").
@@ -16,7 +16,7 @@ Sapling Tree Gen is an add-on, so it may need to be switched on first.
 
 This is a small rectangular box at the left in the viewport. The panel only stays editable until you do something else, so tweak the tree straight away.
 
-## Customize the tree
+#### Customize the tree
 
 | Tab | What it does |
 | --- | --- |
@@ -28,7 +28,7 @@ This is a small rectangular box at the left in the viewport. The panel only stay
 
 Change the seed value to get a different variation of the same tree.
 
-## Add materials
+#### Add materials
 
 The trunk and the leaves are separate objects, so each needs its own material.
 
@@ -46,7 +46,11 @@ The trunk and the leaves are separate objects, so each needs its own material.
 3. For realistic leaves, use a leaf image texture with an alpha channel, and connect its Alpha to the Principled BSDF Alpha input.
 4. Optionally add a little Subsurface or Transmission so light passes through the leaves.
 
-## Make a forest (scattering many trees)
+#### Export
+
+File > Export > Export as .FBX, .OBJ or .GLB
+
+#### Make a forest (scattering many trees)
 
 **Quick method: duplicate**
 
