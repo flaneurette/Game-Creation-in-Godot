@@ -1,3 +1,23 @@
+# Rigging in Blender
+
+Instead of using Mixamo's rigging, which often fails, we can rig it ourselves.
+
+Download an animation from Mixamo, and save it. Do NOT upload you model. Uncheck any material, doesn't matter which character.
+
+### Retarget onto your skeleton
+
+- Import your model into the same Blender scene (File > Import > FBX).
+- Install the free Rokoko add-on. Download it from Rokoko's site, then use Edit > Preferences > Add-ons > Install from Disk (or Extensions in newer Blender). A "Rokoko" tab appears in the sidebar (press N in the 3D view).
+- In the add-on's Retargeting section, set the Source to the Mixamo armature and the Target to your skeleton. Click Build Bone List. It matches bones by name, and you can fix any that didn't match. Then click Retarget Animation.
+- Play the timeline (spacebar) and check that your skeleton moves. Then delete the Mixamo armature.
+
+### Export back to Godot
+
+- Select your skeleton and mesh. Use File > Export > glTF 2.0 (.glb). Under Include, tick Selected Objects, and under Animation, make sure Animation is ticked and "Always Sample Animations" is on.
+- Import the .glb into Godot. The animation is already inside its AnimationPlayer, ready to play.
+
+Rokoko's menus and the Blender version can change how these panels look. If your Blender is recent, most of this should be the same, but tell me if something differs.
+
 # Rigging in Godot.
 
 ### Part A: Prepare your skeleton model (once)
