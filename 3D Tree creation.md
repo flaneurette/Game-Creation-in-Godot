@@ -38,6 +38,23 @@ Change the seed value to get a different variation of the same tree.
 
 The trunk and the leaves are separate objects, so each needs its own material.
 
+Open the "Shading tab", in the field below click: Shift+A and add all these tree:
+
+Press Shift+A with the mouse over the node area and add three nodes:
+
+- Search > Noise Texture (or Image Texture for a bark photo)
+- Search > Bump
+- Search > ColorRam
+
+Drag from one socket to another:
+
+- Noise Texture: Fac to Bump: Height
+- Bump: Normal to Principled BSDF: Normal
+- Noise Texture: Fac to ColorRamp: Fac
+- ColorRamp: Color to Principled BSDF: Base Color
+
+<img src="Examples/Shading.png" />
+
 **Bark**
 
 1. Select the trunk, open the Material tab and click New.
