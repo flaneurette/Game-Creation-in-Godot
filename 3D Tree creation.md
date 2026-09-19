@@ -1,6 +1,6 @@
 # Tree Creation in Blender
 
-It is somewhat better to create your own trees in Blender, then to buy "all of them.". Just buy a single set, perhaps 1-5 3D trees, and generate the rest yourself.
+It is somewhat better to create your own trees in Blender, then to buy "all of them". Just buy a single set, perhaps 1-5 3D trees, and generate the rest yourself.
 
 **My process:**
 
