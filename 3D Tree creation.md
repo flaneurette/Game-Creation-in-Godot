@@ -12,7 +12,7 @@ Sapling Tree Gen is an add-on, so it may need to be switched on first.
 1. Hover your mouse over the 3D viewport and press **Shift+A**.
 2. Choose Curve > Sapling Tree Gen (in some versions the entry is called "Add Tree").
 3. A basic tree appears. 
-4. Open the panel "> Sapling: Add Tree" or "Adjust Last Operation" panel at the bottom-lower-left of the viewport. 
+4. Open the panel **"> Sapling: Add Tree"** or **"Adjust Last Operation"** panel at the bottom-lower-left of the viewport. 
 
 This is a small rectangular box at the left in the viewport. The panel only stays editable until you do something else, so tweak the tree straight away.
 
