@@ -4,8 +4,8 @@
 
 Sapling Tree Gen is an add-on, so it may need to be switched on first.
 
-- Blender 4.1 and older: Edit > Preferences > Add-ons, search "Sapling" and tick the box.
-- Blender 4.2 and newer: Edit > Preferences > Get Extensions, search "Sapling Tree Gen" and install it.
+- <= Blender 4.1: Edit > Preferences > Add-ons, search "Sapling" and tick the box.
+- >= Blender 4.2: Edit > Preferences > Get Extensions, search "Sapling Tree Gen" and install it.
 
 ### Create the tree
 
