@@ -55,6 +55,14 @@ Drag from one socket to another:
 
 <img src="Examples/Shading.png" />
 
+Make the effect visible
+
+Raise Bump: Strength to around 0.5-1.
+
+- On the Noise Texture, set Scale to around 20-50 and Detail to around 10, so the pattern looks like bark instead of big soft blobs.
+- On the ColorRamp, set the left color to dark brown and the right color to a lighter brown.
+- Rotate the view, because bump shows best when light hits at an angle.
+
 **Bark**
 
 1. Select the trunk, open the Material tab and click New.
