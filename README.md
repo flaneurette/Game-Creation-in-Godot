@@ -54,10 +54,13 @@ Create a seperate .tscn scene for the Player, so that it holds it’s own scene.
 
 ## DirectionalLight3D
 
+We created a Noir-film like game setting.
+
 <ins>Properties:</ins>\
 Sky Mode: Light and Sky.\
-Color: #b8c8ff\
+Color: #454545\
 Energy: 1.6
+
 
 ## NavigationRegion3D
 
