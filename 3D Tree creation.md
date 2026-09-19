@@ -40,8 +40,14 @@ Change the seed value to get a different variation of the same tree.
 
 The trunk and the leaves are separate objects, so each needs its own material.
 
-For automated process, import: `/Blender/Material_Bakery.py` into blender add-ons. It will wire everything  correctly, bake the material and export it for you.
+For automated process, import: `/Blender/Material_Bakery.py` into blender add-ons. 
+It will wire everything  correctly, bake the material and export it for you.
 
+**In the Material Bakery:**
+
+- Add mesh name which you want to shade and bake.
+- Click create shader.
+  
 Then open the "Shading tab", and adjust these to your liking:
 
 <img src="Examples/Shading.png" />
