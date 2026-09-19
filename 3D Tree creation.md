@@ -14,7 +14,7 @@ Sapling Tree Gen is an add-on, so it may need to be switched on first.
 3. A basic tree appears. 
 4. Open the panel **"> Sapling: Add Tree"** or **"Adjust Last Operation"** panel at the bottom-lower-left of the viewport. 
 
-This is a small rectangular box at the left in the viewport. The panel only stays editable until you do something else, so tweak the tree straight away.
+> This is a small rectangular box at the lower left in the viewport. The panel only stays editable until you do something else, so tweak the tree straight away.
 
 ### Customize the tree
 
