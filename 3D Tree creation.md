@@ -2,9 +2,9 @@
 
 It is somewhat better to create your own trees in Blender, then to buy "all of them.". Just buy a single set, perhaps 1-5 3D trees, and generate the rest yourself.
 
-My process:
+**My process:**
 
-Buy one "Hero Tree", which is a paid tree which looks gorgeous. Behind it, place the blender generated trees. This creates a nice contrast, as the eye will land on the "Hero Tree" and assumes all the other trees are just as gorgeous. This is good for filling in large areas. The reason for this: bought trees are often huge in filesize: 100MB-300MB, which is too large for a game, which expects 1-5MB per tree.
+Buy one "Hero Tree", which is a paid tree which looks gorgeous. Behind it, place the blender generated trees. This creates a nice contrast, as the eye will land on the "Hero Tree" and assumes all the other trees are just as gorgeous. This is good for filling in large areas. The reason for this: store bought render trees are often huge in filesize: 100MB-300MB, which is too large for a game, which expects 1-5MB per tree.
 
 ### Enable the Sapling Tree Gen add-on
 
