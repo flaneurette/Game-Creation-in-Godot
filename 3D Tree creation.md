@@ -40,20 +40,9 @@ Change the seed value to get a different variation of the same tree.
 
 The trunk and the leaves are separate objects, so each needs its own material.
 
-Open the "Shading tab", in the field below click: Shift+A and add all these tree:
+For automated process, import: `/Blender/Material_Bakery.py` into blender add-ons. It will wire everything  correctly, bake the material and export it for you.
 
-Press Shift+A with the mouse over the node area and add three nodes:
-
-- Search > Noise Texture (or Image Texture for a bark photo)
-- Search > Bump
-- Search > ColorRam
-
-Drag from one socket to another:
-
-- Noise Texture: Fac to Bump: Height
-- Bump: Normal to Principled BSDF: Normal
-- Noise Texture: Fac to ColorRamp: Fac
-- ColorRamp: Color to Principled BSDF: Base Color
+Then open the "Shading tab", and adjust these to your liking:
 
 <img src="Examples/Shading.png" />
 
@@ -65,23 +54,11 @@ Raise Bump: Strength to around 0.5-1.
 - On the ColorRamp, set the left color to dark brown and the right color to a lighter brown.
 - Rotate the view, because bump shows best when light hits at an angle.
 
-**Bark**
-
-1. Select the trunk, open the Material tab and click New.
-2. Set the Base Color of the Principled BSDF to a dark brown.
-3. Add a "Noise Texture" or a bark image texture, and connect it through a "Bump" node to the Normal input for roughness and depth.
-4. Raise Roughness to around 0.8-0.9.
-
-**Leaves**
-
-1. Select the leaves object and add a new material.
-2. Set the Base Color to green (vary it slightly for a natural look).
-3. For realistic leaves, use a leaf image texture with an alpha channel, and connect its Alpha to the Principled BSDF Alpha input.
-4. Optionally add a little Subsurface or Transmission so light passes through the leaves.
+After, go back to modeling, press N, in the Baker: click "Bake Now"
 
 ### Export
 
-File > Export > Export as .FBX, .OBJ or .GLB
+Click export to FBX or GLB
 
 ---
 
