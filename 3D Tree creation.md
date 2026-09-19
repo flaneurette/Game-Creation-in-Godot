@@ -16,6 +16,33 @@ Sapling Tree Gen is an add-on, so it may need to be switched on first.
 
 > This is a small rectangular box at the lower left in the viewport. The panel only stays editable until you do something else, so tweak the tree straight away.
 
+### Adjust the tree branches
+
+Sapling puts leaves on the last branch level only.
+
+**1. Add more branch levels (most important)**
+- In the **Geometry** tab, raise **Branch Levels** (for example from 2 to 3 or 4).
+- The extra level becomes the fine twigs, and the leaves move out to them. If the leaves currently cover thick branches, you probably have too few levels, so the last level is still thick.
+
+**2. Make the last level thin**
+- In the **Branch Radius** tab, increase the taper and lower the radius of the later levels, so the twigs are much thinner than the trunk.
+- In the **Branch Growth** tab, give the last level a decent length and enough splitting, so the leaves have room to spread out.
+
+**3. Tune the leaves**
+- In the **Leaves** tab, lower the **leaf count** so the leaves don't pile up along each branch.
+- Play with **Leaf Distribution** to change where along the branch they sit, and with the leaf angle and rotation settings to spread them out more naturally.
+
+> Exact option names vary a little between Blender versions.
+
+**If you want precise control (Geometry Nodes)**
+
+1. Turn off **Show Leaves** in Sapling.
+2. Add a Geometry Nodes modifier to the trunk curve and use **Curve to Points** with the curve's **Radius**.
+3. Add a **Compare** node, radius less than a small value such as 0.02, and use it as the Selection of an **Instance on Points** node.
+4. Instance a leaf or leaf cluster there, with Random Value nodes for rotation and scale.
+
+This puts leaves only where the branch is thin, and you can change the threshold at any time.
+
 ### Customize the tree
 
 | Tab | What it does |
