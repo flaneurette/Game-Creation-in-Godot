@@ -50,6 +50,8 @@ The trunk and the leaves are separate objects, so each needs its own material.
 
 File > Export > Export as .FBX, .OBJ or .GLB
 
+---
+
 ### Make a forest (scattering many trees)
 
 **Quick method: duplicate**
