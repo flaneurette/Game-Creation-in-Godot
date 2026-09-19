@@ -45,6 +45,8 @@ It will wire everything  correctly, bake the material and export it for you.
 
 **In the Material Bakery:**
 
+<img src="Examples/Bakery.png" />
+
 - Add mesh name which you want to shade and bake.
 - Click create shader.
   
@@ -61,6 +63,8 @@ Raise Bump: Strength to around 0.5-1.
 - Rotate the view, because bump shows best when light hits at an angle.
 
 After, go back to modeling, press N, in the Baker: click "Bake Now"
+
+<img src="Examples/BakeExport.png" />
 
 ### Export
 
