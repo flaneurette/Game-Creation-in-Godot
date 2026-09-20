@@ -26,8 +26,10 @@ Collect the animations:
 - Click Reimport
 - Then in the saved `/Res/` folder: set the path to something meaningful, like run.res.
 - Then repeat for each file: idle, walk, run, death, and so on. Name them idle.res, walk.res, run.res, death.res.
-  
+
 ### Put them all into the character's AnimationPlayer
+
+<img src="Examples/AnimationsMixamo.png" />
 
 - Open the character model scene (the Walking scene you made, with the AnimationPlayer in it). (You might need to resave if it's a FBX!)
 - Select the AnimationPlayer, click Animation in the bottom panel, then Manage Animations.
@@ -39,7 +41,11 @@ Now drag the `Model.tscn` into the `Enemy.tcsn`, below `CharacterBody3D`
 
 Then play the game to see if it worked.
 
-# Rigging in Godot (skip if you just used Mixamo)
+Done!
+
+---
+
+### Rigging in Godot (skip if you just used Mixamo)
 
 This is ONLY needed if you didn't use Mixamo! In Godot, we can do a similar thing as in Mixamo, but's it's harder.
 
