@@ -12,10 +12,11 @@ Each Mixamo download is its own file with one animation inside, so the job is to
 
 ### Put them all into the character's AnimationPlayer
 
-- Open the character model scene (the Walking scene you made, with the AnimationPlayer in it).
+- Open the character model scene (the Walking scene you made, with the AnimationPlayer in it). (You might need to resave if it's a FBX!)
 - Select the AnimationPlayer, click Animation in the bottom panel, then Manage Animations.
 - Click "New Library", and name it Mixamo.
 - On the new Mixamo row, click the folder icon (Load animation from file) and pick walk.res. Repeat for run.res, idle.res and death.res. Each animation takes the name of its file.
+- Once saved, remove the original and replace it with the new Model.tscn you saved.
 
 Every animation has to come from the same character skeleton, so they must all be downloaded for your rigged character, not a stock Mixamo one.
 
