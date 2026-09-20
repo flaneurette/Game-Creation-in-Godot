@@ -2,7 +2,7 @@
 
 Instead of using Mixamo's rigging, which often fails, we can rig it ourselves.
 
-Download an animation from Mixamo, and save it. Do NOT upload you model. Uncheck any material, doesn't matter which character.
+Select and download an animation from Mixamo, and save it. Do NOT upload your model. Uncheck any material upon exporting.
 
 ### Retarget onto your skeleton
 
@@ -46,8 +46,11 @@ Drag the FBX into your Godot project.
 - Select GeneralSkeleton in the Scene tree. In the Inspector, make sure Show Rest Only is off.
 Expand Bones > Hips > Pose in the Inspector and scrub the timeline. Do the numbers change? If they do but the mesh doesn't move, the mesh isn't following the skeleton. If they don't change, the animation isn't reaching the bones.
 - Select the AnimationPlayer and check that Root Node is ...
-Repeat Parts B to D with a second clip, such as Walking.fbx, to see whether the first clip is the problem.
 
 ### In the actual game
 
-- Play the animation from a script with $AnimationPlayer.play("Mixamo/mixamo_com"), using your library name and the animation name.
+- Play the animation from a script with:
+
+```$AnimationPlayer.play("Mixamo/mixamo_com")```
+
+using your library name and the animation name.
