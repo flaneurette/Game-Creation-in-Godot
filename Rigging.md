@@ -36,7 +36,7 @@ Collect the animations:
 - Then click: Manage Animations.
 - Click "New Library", and name it `Animations`.
 - On the new Animations row, click the folder icon (Load animation from file) and pick walk.res. Repeat for run.res, idle.res and death.res. Each animation takes the name of its file.
-- Once saved, remove the original and replace it with the new `Model.tscn` you just saved.
+- Save the consolidated model as `Model.tscn`, remove the original and replace it with the new `Model.tscn` you just saved.
 
 Now drag the `Model.tscn` into the `Enemy.tcsn`, below `CharacterBody3D`
 
