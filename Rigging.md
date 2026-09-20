@@ -42,6 +42,17 @@ Now drag the `Model.tscn` into the `Enemy.tcsn`, below `CharacterBody3D`
 
 Then play the game to see if it worked.
 
+### Gotcha's
+
+Sometimes the animations seem out of sync:
+
+The Mixamo clips aren't "in place": they translate the metarig root forward every loop (~16 units for Walking). The body is moved by move_and_slide(), so the mesh drifts ahead of it and snaps back when the clip wraps - the periodic backwards bump, whatever move_speed is. Pin the root's horizontal
+position to its first key; vertical bob is kept.
+
+To fix this, see the Enemy.gd script.
+
+### Finale
+
 Done!
 
 ---
