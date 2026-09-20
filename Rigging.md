@@ -1,4 +1,25 @@
-# Rigging in Godot.
+# Consolidate animations from Mixamo
+
+Each Mixamo download is its own file with one animation inside, so the job is to collect them all into the character's one AnimationPlayer, then tell the script which name to play when. 
+
+### Give each animation file its own saved name (once per file)
+
+- Double-click an animation FBX (for example Pistol Run.fbx) to open its import window.
+- In the tree on the left, click the animation entry (mixamo_com).
+- Actions -> Set animations save path -> Save To File
+- Click Reimport, then repeat for each file: idle, walk, run, death, and so on. Name them idle.res, walk.res, run.res, death.res.
+- Then in the saved folder: set the path to something meaningful, like run.res.
+
+### Put them all into the character's AnimationPlayer
+
+- Open the character model scene (the Walking scene you made, with the AnimationPlayer in it).
+- Select the AnimationPlayer, click Animation in the bottom panel, then Manage Animations.
+- Click "New Library", and name it Mixamo.
+- On the new Mixamo row, click the folder icon (Load animation from file) and pick walk.res. Repeat for run.res, idle.res and death.res. Each animation takes the name of its file.
+
+Every animation has to come from the same character skeleton, so they must all be downloaded for your rigged character, not a stock Mixamo one.
+
+# Rigging in Godot (if you don't use Mixamo)
 
 ### Prepare your skeleton model (once)
 
