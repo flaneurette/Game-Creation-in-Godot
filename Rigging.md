@@ -16,7 +16,7 @@ Download an animation from Mixamo, and save it. Do NOT upload you model. Uncheck
 - Select your skeleton and mesh. Use File > Export > glTF 2.0 (.glb). Under Include, tick Selected Objects, and under Animation, make sure Animation is ticked and "Always Sample Animations" is on.
 - Import the .glb into Godot. The animation is already inside its AnimationPlayer, ready to play.
 
-Rokoko's menus and the Blender version can change how these panels look. If your Blender is recent, most of this should be the same, but tell me if something differs.
+Rokoko's menus and the Blender version can change how these panels look. If your Blender is recent, most of this should be the same.
 
 # Rigging in Godot.
 
