@@ -1,3 +1,11 @@
+# Mixamo
+
+- Go to Mixamo
+- Upload your model
+- Select a animation, and download them with default settings.
+
+Do this until you have all animations you want.
+
 # Consolidate animations from Mixamo
 
 Each Mixamo download is its own file with one animation inside, so the job is to collect them all into the character's one AnimationPlayer, then tell the script which name to play when. 
