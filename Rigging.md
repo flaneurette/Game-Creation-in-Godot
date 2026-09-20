@@ -23,9 +23,10 @@ Collect the animations:
 - Double-click an animation FBX (for example Pistol Run.fbx) to open its import window.
 - In the tree on the left, click the animation entry (mixamo_com).
 - Actions -> Set animations save path -> Save To File
-- Click Reimport, then repeat for each file: idle, walk, run, death, and so on. Name them idle.res, walk.res, run.res, death.res.
-- Then in the saved folder: set the path to something meaningful, like run.res.
-
+- Click Reimport
+- Then in the saved `/Res/` folder: set the path to something meaningful, like run.res.
+- Then repeat for each file: idle, walk, run, death, and so on. Name them idle.res, walk.res, run.res, death.res.
+  
 ### Put them all into the character's AnimationPlayer
 
 - Open the character model scene (the Walking scene you made, with the AnimationPlayer in it). (You might need to resave if it's a FBX!)
