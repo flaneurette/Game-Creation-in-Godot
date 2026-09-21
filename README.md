@@ -28,20 +28,24 @@ Node3D.tscn – script: WeatherManagement.gd > Then drop “Player” on the Fol
 ├── CanvasLayer – script: HUD.gd
 │   └── Crosshair – script: Crosshair.gd
 └── HUD
-    ├── Toaster – script: Toaster.gd
-    │   └── MarginContainer
-    │       └── TextureRect
-    ├── Panel
-    │   ├── RadarIcon
-    │   └── TextureRect
-    ├── AmmoPanel
-    │   ├── AmmoLabel
-    │   ├── AmmoBar
-    │   └── AmmoIcon
-    └── HealthPanel
-        ├── HealthLabel
-        ├── HealthBar
-        └── HealthIcon
+│   ├── Toaster – script: Toaster.gd
+│   │   └── MarginContainer
+│   │       └── TextureRect
+│   ├── Panel
+│   │   ├── RadarIcon
+│   │   └── TextureRect
+│   ├── AmmoPanel
+│   │   ├── AmmoLabel
+│   │   ├── AmmoBar
+│   │   └── AmmoIcon
+│   └── HealthPanel
+│       ├── HealthLabel
+│       ├── HealthBar
+│       └── HealthIcon
+└── Console (MarginContainer)
+    └── ConsolePanel (Panel) - script: Console.gd
+        ├── Log (RichTextLabel)
+        └── CommandInput (LineEdit)
 ```
 
 **Node3D.tscn**
@@ -54,13 +58,10 @@ Create a seperate .tscn scene for the Player, so that it holds it’s own scene.
 
 ## DirectionalLight3D
 
-We created a Noir-film like game setting.
-
 <ins>Properties:</ins>\
 Sky Mode: Light and Sky.\
-Color: #454545\
+Color: #b8c8ff\
 Energy: 1.6
-
 
 ## NavigationRegion3D
 
@@ -90,6 +91,26 @@ To color the ground, first create a new shader called *Ground.gdshader*. Then Se
     Strech Mode: Keep Centered
 ```
 
+**Attach a script to a node**
+
+To attach more scripts, we can create sub-nodes/panels and add a script to each which then select the parent node. This avoids the one-script limitation per node in Godot.
+
+Example:
+
+Console (MarginContainer)
+└── ConsolePanel (Panel) - script: Console.gd
+    ├── Log (RichTextLabel)
+    └── CommandInput (LineEdit)
+
+Select the parent through a script:
+
+```
+# Node is the ConsolePanel where this script is dropped on.
+extends Node
+# Get "Console" by selecting the parent:
+@onready var console: MarginContainer = get_parent()
+```
+
 **HUD UI Gotcha’s:**
 
 Most “unclickable” items in the HUD need to ignore the mouse, otherwise it can (b)lock the mouse:
@@ -106,7 +127,7 @@ If you ever add HUD elements that should be interactive – a pause menu button,
 
 When uploading a model to mixamo, be sure to also upload the textures.zip. Otherwise you might get an error. If error occurs, try again later.
 
-**Select CharacterBody3D**
+Select CharacterBody3D
 
 In the Scene panel toolbar, click the chain-link icon ("Instantiate Child Scene")
 
