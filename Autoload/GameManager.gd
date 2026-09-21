@@ -14,10 +14,22 @@ var explosives: int = 3
 # knives wear down after use, decrease by 2
 var knives: int = 20
 
-# Max values — used by the HUD to size ammo bars per weapon type.
+# Max values - used by the HUD to size ammo bars per weapon type.
 const MAX_BULLETS: int = 30
 const MAX_EXPLOSIVES: int = 3
 const MAX_KNIVES: int = 20
+const MAX_HEALTH: int = 100
+
+# Set by the console "god" command; damagePlayer() ignores damage while true.
+var god_mode: bool = false
+
+func damagePlayer(amount: int) -> void:
+	if god_mode or health <= 0:
+		return
+	health = max(health - amount, 0)
+	EventBus.player_health_changed.emit(health, MAX_HEALTH)
+	if health == 0:
+		EventBus.player_died.emit()
 
 func addScore(points: int) -> void:
 	score += points
