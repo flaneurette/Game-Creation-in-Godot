@@ -21,11 +21,12 @@ var standing_camera_y: float
 # range: how far the raycast reaches. splash_radius: 0 = single-target hit,
 # >0 = also damages everything with take_damage() within that radius of the hit point.
 var weapons = [
-	{"type": "gun",       "damage": 5.0,  "range": 100.0, "splash_radius": 0.0},
-	{"type": "explosives", "damage": 40.0, "range": 100.0, "splash_radius": 4.0},
-	{"type": "knife",      "damage": 25.0, "range": 2.5,   "splash_radius": 0.0},
+	{"type": "gun",       "damage": 25.0,  "range": 100.0, "splash_radius": 0.0},
+	{"type": "explosives", "damage": 100.0, "range": 100.0, "splash_radius": 4.0},
+	{"type": "knife",      "damage": 15.0, "range": 2.5,   "splash_radius": 0.0},
 ]
-var current_weapon_index = 0
+# -1 = unarmed; the first Tab press equips the first weapon.
+var current_weapon_index = -1
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -94,6 +95,9 @@ func switch_weapon() -> void:
 	EventBus.weapon_switched.emit(weapon.type)
 
 func shoot() -> void:
+	if current_weapon_index < 0:
+		print("No weapon equipped - press Tab.")
+		return
 	var weapon = weapons[current_weapon_index]
 
 	if not GameManager.hasAmmo(weapon.type):
@@ -157,5 +161,8 @@ func _try_talk() -> void:
 		result.collider.talk_to(self)
 
 func _update_ammo_hud() -> void:
+	if current_weapon_index < 0:
+		EventBus.player_ammo_changed.emit(0, 0)
+		return
 	var weapon = weapons[current_weapon_index]
 	EventBus.player_ammo_changed.emit(GameManager.getAmmoCount(weapon.type), GameManager.getMaxAmmo(weapon.type))

@@ -13,6 +13,12 @@ var current_spread: float = 0.0
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
+	# Hidden while unarmed; shown once the player tabs into a weapon.
+	visible = false
+	EventBus.weapon_switched.connect(_on_weapon_switched)
+
+func _on_weapon_switched(_type: String) -> void:
+	visible = true
 
 func _draw() -> void:
 	# Use the viewport center rather than this node's own size, so it stays

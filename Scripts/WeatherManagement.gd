@@ -24,7 +24,7 @@ func _ready():
 		var mm := MultiMesh.new()
 		mm.transform_format = MultiMesh.TRANSFORM_3D
 		mm.mesh = BoxMesh.new()
-		mm.mesh.size = Vector3(0.025, 0.6, 0.025)
+		mm.mesh.size = Vector3(0.005, 0.6, 0.005)
 
 		var mat := StandardMaterial3D.new()
 		mat.albedo_color = Color(0.318, 0.318, 0.318, 0.831)
@@ -66,6 +66,6 @@ func _process(delta):
 				t.origin.z = origin.z + randf_range(-area_size.y / 2, area_size.y / 2)
 			# Wrap x/z into the box around the player so the field tracks movement
 			# immediately, not only when a drop respawns.
-			t.origin.x = origin.x + posmod(t.origin.x - origin.x + area_size.x / 2, area_size.x) - area_size.x / 2
-			t.origin.z = origin.z + posmod(t.origin.z - origin.z + area_size.y / 2, area_size.y) - area_size.y / 2
+			#t.origin.x = origin.x + posmod(t.origin.x - origin.x + area_size.x / 2, area_size.x) - area_size.x / 2
+			#t.origin.z = origin.z + posmod(t.origin.z - origin.z + area_size.y / 2, area_size.y) - area_size.y / 2
 			mm.set_instance_transform(i, t)
