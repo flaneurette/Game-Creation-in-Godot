@@ -43,9 +43,10 @@ Node3D.tscn – script: WeatherManagement.gd > Then drop “Player” on the Fol
 │       ├── HealthBar (ProgressBar)
 │       └── HealthIcon (TextureRect)
 └── Console (MarginContainer)
-    └── ConsolePanel (Panel) - script: Console.gd
-        ├── Log (RichTextLabel)
-        └── CommandInput (LineEdit)
+│    └── ConsolePanel (Panel) - script: Console.gd
+│       ├── Log (RichTextLabel)
+│       └── CommandInput (LineEdit)
+└── DeathScreen (CanvasLayer) - script: DeathScreen.gd
 ```
 
 **Node3D.tscn**
