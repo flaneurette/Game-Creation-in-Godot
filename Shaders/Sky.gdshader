@@ -14,7 +14,7 @@ uniform float cloud_speed : hint_range(0.0, 1.0) = 0.03;
 uniform float coverage : hint_range(0.0, 1.0) = 0.5;
 uniform float softness : hint_range(0.01, 1.0) = 0.25;
 uniform float density : hint_range(0.1, 5.0) = 1.5;
-uniform vec3 cloud_color : source_color = vec3(0.15, 0.16, 0.22); // dim, night-tinted clouds
+uniform vec3 cloud_color : source_color = vec3(0.1, 0.1, 0.22); // dim, night-tinted clouds
 uniform float cloud_opacity : hint_range(0.0, 1.0) = 0.5; // master fade for clouds (e.g. clear-sky control)
 
 vec2 hash2(vec2 p) {
