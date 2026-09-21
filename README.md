@@ -1,4 +1,4 @@
-# Game Creation
+# 3D Game Creation
 
 in Godot 4.7+
 
@@ -28,20 +28,20 @@ Node3D.tscn – script: WeatherManagement.gd > Then drop “Player” on the Fol
 ├── CanvasLayer – script: HUD.gd
 │   └── Crosshair – script: Crosshair.gd
 └── HUD
-│   ├── Toaster – script: Toaster.gd
+│    ├── Toaster – script: Toaster.gd
 │   │   └── MarginContainer
 │   │       └── TextureRect
 │   ├── Panel
-│   │   ├── RadarIcon
+│   │   ├── RadarIcon (TextureRect)
 │   │   └── TextureRect
 │   ├── AmmoPanel
-│   │   ├── AmmoLabel
-│   │   ├── AmmoBar
-│   │   └── AmmoIcon
+│   │   ├── AmmoLabel (RichTextLabel)
+│   │   ├── AmmoBar (ProgressBar)
+│   │   └── AmmoIcon (TextureRect)
 │   └── HealthPanel
-│       ├── HealthLabel
-│       ├── HealthBar
-│       └── HealthIcon
+│       ├── HealthLabel (RichTextLabel)
+│       ├── HealthBar (ProgressBar)
+│       └── HealthIcon (TextureRect)
 └── Console (MarginContainer)
     └── ConsolePanel (Panel) - script: Console.gd
         ├── Log (RichTextLabel)
