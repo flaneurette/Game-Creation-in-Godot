@@ -14,8 +14,7 @@ print(pos.x)   # 5  -> right/left position
 print(pos.y)   # 2  -> up/down position (height)
 print(pos.z)   # -3 -> forward/back position (depth)
 
-# common pattern: only touch one axis, leave the rest alone
-velocity.y = -9.8  # apply gravity without changing horizontal movement
+pos.y = -9.8  # apply gravity without changing horizontal movement
 ```
 
 ---
