@@ -6,7 +6,7 @@ A condensed reference for common math functions used in Godot (GDScript syntax, 
 
 ## Understanding x, y, z
 
-Before the functions below make sense, it helps to know what `x`, `y`, and `z` actually represent. They're just the individual **components** (axes) of a position or direction in space, bundled together into a `Vector2` or `Vector3` object. In 2D, `x` is horizontal (positive = right) and `y` is vertical (positive = **down** on screen in Godot, which trips up a lot of newcomers coming from math class where up is positive). In 3D, `z` is added as depth (positive = toward the camera by default, i.e. "out of the screen"), following Godot's right-handed coordinate system. You can read or write each axis individually (`velocity.x`, `position.z`), or manipulate the whole vector at once — both are used constantly depending on whether you're changing one axis (like jump height on `y`) or moving the object as a whole.
+Before the functions below make sense, it helps to know what `x`, `y`, and `z` actually represent. They're just the individual **components** (axes) of a position or direction in space, bundled together into a `Vector2` or `Vector3` object. In 2D, `x` is horizontal (positive = right) and `y` is vertical (positive = **down** on screen in Godot, which trips up a lot of newcomers coming from math class where up is positive). In 3D, `z` is added as depth (positive = toward the camera by default, i.e. "out of the screen"), following Godot's right-handed coordinate system. You can read or write each axis individually (`velocity.x`, `position.z`), or manipulate the whole vector at once - both are used constantly depending on whether you're changing one axis (like jump height on `y`) or moving the object as a whole.
 
 ```gdscript
 var pos = Vector3(5, 2, -3)
@@ -145,7 +145,7 @@ func _physics_process(delta):
 
 ## Vector3() / "vector"
 
-`Vector3(x, y, z)` is the 3D equivalent of `Vector2`, used for positions, directions, velocities, and normals in 3D space, and it supports the same arithmetic (`+`, `-`, `*`, dot/cross products, length, normalization) plus a `z` component for depth. Generically, a "vector" in Godot just means one of these fixed-size numeric tuples used to represent a point or direction in space — the same underlying idea, just with 2 or 3 numbers depending on whether you're in 2D or 3D.
+`Vector3(x, y, z)` is the 3D equivalent of `Vector2`, used for positions, directions, velocities, and normals in 3D space, and it supports the same arithmetic (`+`, `-`, `*`, dot/cross products, length, normalization) plus a `z` component for depth. Generically, a "vector" in Godot just means one of these fixed-size numeric tuples used to represent a point or direction in space - the same underlying idea, just with 2 or 3 numbers depending on whether you're in 2D or 3D.
 
 ```gdscript
 extends CharacterBody3D
@@ -173,7 +173,7 @@ func _physics_process(delta):
 
 ## lerp()
 
-`lerp(from, to, weight)` (linear interpolation) returns a value that is `weight` fraction of the way between `from` and `to` — `0.0` gives `from`, `1.0` gives `to`, and `0.5` gives the exact midpoint. It works on floats, `Vector2`, `Vector3`, and colors, and is the go-to tool for smooth transitions like camera easing, fading, or gradually moving a value toward a target — note that calling it every frame with a small weight (like `0.1`) creates a natural "ease out" effect, since the remaining distance shrinks each step.
+`lerp(from, to, weight)` (linear interpolation) returns a value that is `weight` fraction of the way between `from` and `to` - `0.0` gives `from`, `1.0` gives `to`, and `0.5` gives the exact midpoint. It works on floats, `Vector2`, `Vector3`, and colors, and is the go-to tool for smooth transitions like camera easing, fading, or gradually moving a value toward a target - note that calling it every frame with a small weight (like `0.1`) creates a natural "ease out" effect, since the remaining distance shrinks each step.
 
 ```gdscript
 extends Camera2D
@@ -236,7 +236,7 @@ func zoom_camera(delta_zoom: float):
 
 ## Bonus: move_toward()
 
-`move_toward(from, to, delta_amount)` moves a value a fixed step toward a target without overshooting it, which is different from `lerp()` because the speed here is constant (linear) rather than slowing down as it approaches the target — it just stops exactly at `to` once it gets there. It's ideal for things like gradual acceleration/deceleration, health regeneration ticking up at a fixed rate, or rotating at a fixed max turn speed.
+`move_toward(from, to, delta_amount)` moves a value a fixed step toward a target without overshooting it, which is different from `lerp()` because the speed here is constant (linear) rather than slowing down as it approaches the target - it just stops exactly at `to` once it gets there. It's ideal for things like gradual acceleration/deceleration, health regeneration ticking up at a fixed rate, or rotating at a fixed max turn speed.
 
 ```gdscript
 extends CharacterBody2D
@@ -261,7 +261,7 @@ func _physics_process(delta):
 
 ## Bonus: normalized() / dot()
 
-`vector.normalized()` returns the same direction scaled down to a length of exactly 1, which is essential before using a vector purely as a direction (e.g. for movement input) so that diagonal movement isn't faster than straight movement (an un-normalized diagonal input like `(1, 1)` has a length of ~1.41, not 1). `vector_a.dot(vector_b)` returns a single number describing how aligned two normalized vectors are: `1.0` means pointing the exact same way, `-1.0` means exactly opposite, and `0.0` means perpendicular — commonly used to check if something is roughly in front of or behind another object, like a field-of-view or backstab check.
+`vector.normalized()` returns the same direction scaled down to a length of exactly 1, which is essential before using a vector purely as a direction (e.g. for movement input) so that diagonal movement isn't faster than straight movement (an un-normalized diagonal input like `(1, 1)` has a length of ~1.41, not 1). `vector_a.dot(vector_b)` returns a single number describing how aligned two normalized vectors are: `1.0` means pointing the exact same way, `-1.0` means exactly opposite, and `0.0` means perpendicular - commonly used to check if something is roughly in front of or behind another object, like a field-of-view or backstab check.
 
 ```gdscript
 extends CharacterBody2D
