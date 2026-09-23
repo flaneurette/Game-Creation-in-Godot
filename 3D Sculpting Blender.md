@@ -14,9 +14,16 @@ This uses digital sculpting rather than box modeling - better suited to organic 
 
 Since the sphere is still low-poly, you need a way to add detail as you sculpt.
 
-1. Open the `N-panel` (`N` key) -> `Tool` tab.
-2. Under `Dyntopo`, click to enable it.
-3. Set `Detail Size` to around `8` px - this controls how fine the added geometry is. Lower = more detail, slower performance.
+> Finding Dyntopo
+
+```
+Select your mesh and enter Sculpt Mode (either via the Sculpting workspace tab at the top, or Ctrl+Tab > Sculpt Mode).
+Look at the header bar running along the top of the 3D viewport (same row as the "Sculpt", "Mask", "Face Sets" menus).
+You'll see a Dyntopo button/toggle there directly - click it to switch it on (it highlights blue when active).
+Click the small dropdown arrow right next to that Dyntopo button to expand its settings - that's where Detail Size, Refine Method, and Relax Mesh live.
+```
+
+Set `Detail Size` to around `8` px - this controls how fine the added geometry is. Lower = more detail, slower performance.
 
 `Alternative:` instead of Dyntopo, add a `Multiresolution modifier` (Properties panel -> wrench icon -> Add Modifier -> Multiresolution) and click `Subdivide` 3–4 times. This gives more control but is a bit more setup - Dyntopo is simpler for a first attempt.
 
