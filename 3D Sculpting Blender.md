@@ -19,8 +19,6 @@ Since the sphere is still low-poly, you need a way to add detail as you sculpt.
 - Set `Detail Size` to around `4 px` - this controls how fine the added geometry is. Lower = more detail, slower performance.
 - Above it, in `symmetry`, tick `X` to off otherwise Blender creates symetric scultping. Only use it for like eyes.
 
-`Alternative:` instead of Dyntopo, add a `Multiresolution modifier` (Properties panel -> wrench icon -> Add Modifier -> Multiresolution) and click `Subdivide` 3–4 times. This gives more control but is a bit more setup - Dyntopo is simpler for a first attempt.
-
 #### Block Out the Cranium
 
 - In viewpoint (large round coordinate gizmo on the top right) Switch to `Left Orthographic` to adjust the back of the skull from the left-side.
