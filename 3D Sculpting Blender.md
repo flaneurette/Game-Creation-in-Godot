@@ -46,17 +46,29 @@ The sphere should now look like this:
 3. Paint two horizontal ridges above where the eyes will go - this is the brow ridge.
 4. Paint two smaller raised areas on the sides, roughly level with the middle of the face - these become the cheekbones (zygomatic arches).
 
+<img src="Examples/SkullShaping2.png" />
+
 #### Carve the Eye Sockets
 
 - In `Dyntopo`, tick `Smooth Shading` to `on` so you can see finer details
   
 1. Switch to the `Crease` brush.
 2. Set `Radius: 44px` and `Strength: 0.6` and carefully press in two oval-ish indentations below the brow ridge
-3. Switch to `Smooth` brush and soften the harsh edges around each socket.
+
+<img src="Examples/SkullShaping3.png" />
+
+4. Switch to `Smooth` brush and soften the harsh edges around each socket.
 
 The Smooth tool can look like this:
 
 <img src="Examples/SkullShapingSmooth.png" />
+
+#### Shape Skull Further
+
+1. Switch to the `Crease` brush.
+2. Set `Radius: 100px` and `Strength: 0.9` and carefully press in two oval-ish indentations at the side of the head:
+   
+<img src="Examples/SkullShaping4.png" />
 
 #### Carve the Nasal Cavity
 
