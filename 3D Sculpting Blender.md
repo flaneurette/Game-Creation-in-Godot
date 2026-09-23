@@ -90,6 +90,13 @@ After some more skull shaping with the `crease brush at 100px`, it now might loo
 2. Use `Clay Strips` to add a bit of width/mass at the back corners of the jaw (the jaw angle).
 3. Optionally, use the `Crease` brush to suggest a tooth line - a shallow horizontal groove where the mouth would be. For a stylized skull, you don't need individual teeth.
 
+By using lots of `crease` brushes at various sizes, we can conlcude it to this (did not use clay strips):
+
+<img src="Examples/SkullShaping6.png" />
+
+> Remember: this was done freehand, without any reference. Use a reference where possible.
+
+
 #### Smooth and Refine
 
 1. Switch to the `Smooth` brush and go over the entire model lightly - this blends your rougher brush strokes into a more cohesive surface.
