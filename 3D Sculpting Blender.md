@@ -16,7 +16,7 @@ Since the sphere is still low-poly, you need a way to add detail as you sculpt.
 
 - In the right menu, you'll see a Dyntopo button/toggle there directly - click it to switch it on
 - Click the small dropdown arrow right next to that Dyntopo button to expand its settings
-- Set `Detail Size` to around `8 px` - this controls how fine the added geometry is. Lower = more detail, slower performance.
+- Set `Detail Size` to around `4 px` - this controls how fine the added geometry is. Lower = more detail, slower performance.
 - Above it, in `symmetry`, tick `X` to off otherwise Blender creates symetric scultping. Only use it for like eyes.
 
 `Alternative:` instead of Dyntopo, add a `Multiresolution modifier` (Properties panel -> wrench icon -> Add Modifier -> Multiresolution) and click `Subdivide` 3–4 times. This gives more control but is a bit more setup - Dyntopo is simpler for a first attempt.
