@@ -16,12 +16,10 @@ Since the sphere is still low-poly, you need a way to add detail as you sculpt.
 
 > Finding Dyntopo
 
-```
-Select your mesh and enter Sculpt Mode (either via the Sculpting workspace tab at the top, or Ctrl+Tab > Sculpt Mode).
-Look at the header bar running along the top of the 3D viewport (same row as the "Sculpt", "Mask", "Face Sets" menus).
-You'll see a Dyntopo button/toggle there directly - click it to switch it on (it highlights blue when active).
-Click the small dropdown arrow right next to that Dyntopo button to expand its settings - that's where Detail Size, Refine Method, and Relax Mesh live.
-```
+- Select your mesh and enter Sculpt Mode (either via the Sculpting workspace tab at the top, or Ctrl+Tab > Sculpt Mode).
+- Look at the header bar running along the top of the 3D viewport (same row as the "Sculpt", "Mask", "Face Sets" menus).
+- You'll see a Dyntopo button/toggle there directly - click it to switch it on (it highlights blue when active).
+- Click the small dropdown arrow right next to that Dyntopo button to expand its settings - that's where Detail Size, Refine Method, and Relax Mesh live.
 
 Set `Detail Size` to around `8` px - this controls how fine the added geometry is. Lower = more detail, slower performance.
 
