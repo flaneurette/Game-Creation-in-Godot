@@ -70,6 +70,10 @@ The Smooth tool can look like this:
    
 <img src="Examples/SkullShaping4.png" />
 
+If you want, you can also indent the skull on the top-sides slightly. Later-on, use Smooth brush to smooth things out.
+
+> Note: We're not aiming for accuracy, but technique.
+
 #### Carve the Nasal Cavity
 
 1. Back in `Sculpt Mode`, use the `Crease` or `Draw Sharp` brush.
