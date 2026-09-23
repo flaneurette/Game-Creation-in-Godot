@@ -7,7 +7,7 @@ This uses digital sculpting rather than box modeling - better suited to organic 
 #### Set Up the Base Shape
 
 1. `Add` -> `Mesh` -> `UV Sphere`.
-2. In the `Add UV Sphere` panel (bottom-left), increase `Segments` and `Rings` to around `32` each - more geometry gives sculpt brushes more to work with.
+2. In the `Add UV Sphere` panel (bottom-left), increase `Segments` and `Rings` to around `64` each - more geometry gives sculpt brushes more to work with.
 3. Switch to the `Sculpting` workspace tab at the top of the screen.
 
 #### Add Resolution for Sculpting
@@ -27,7 +27,7 @@ Since the sphere is still low-poly, you need a way to add detail as you sculpt.
 
 #### Block Out the Cranium
 
-1. Select the `Grab` brush (`G` shortcut, or pick from the toolbar on the left).
+1. Select the `Grab` brush from the left menu. `Set radius to: 250`
 2. Click and drag on the top-back of the sphere to pull it slightly, elongating the rounded cranium shape - skulls aren't perfectly spherical, they're a bit longer back-to-front.
 3. Use `Grab` again on the lower-front area to start pulling out where the jaw and face will be - drag downward and slightly forward.
 
