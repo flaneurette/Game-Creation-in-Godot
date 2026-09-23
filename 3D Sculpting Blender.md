@@ -8,7 +8,7 @@ This uses digital sculpting rather than box modeling - better suited to organic 
 
 1. `Add` -> `Mesh` -> `UV Sphere`.
 2. In the `Add UV Sphere` panel (bottom-left), increase `Segments` and `Rings` to around `32` each - more geometry gives sculpt brushes more to work with.
-3. Press `Tab` -> no wait, don't go to Edit Mode yet. Instead, switch to the `Sculpting` workspace tab at the top of the screen.
+3. Switch to the `Sculpting` workspace tab at the top of the screen.
 
 #### Add Resolution for Sculpting
 
