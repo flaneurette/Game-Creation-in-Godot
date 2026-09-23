@@ -46,23 +46,11 @@ The sphere should now look like this:
 
 #### Carve the Eye Sockets
 
-This is the trickiest part - two options:
-
 `Option A - Sculpt them directly:`
 
 1. Switch to the `Crease` brush.
-2. Set `Strength` low (~`0.2`) and carefully press in two oval-ish indentations below the brow ridge, spaced evenly from the center.
+2. Set `Radius: 44px` and `Strength: 0.3` low (~`0.2`) and carefully press in two oval-ish indentations below the brow ridge
 3. Switch to `Smooth` brush and soften the harsh edges around each socket.
-
-`Option B - Boolean cutout (more precise, recommended for beginners):`
-
-1. Exit Sculpt Mode (`Tab` or switch back to Layout workspace).
-2. `Add` -> `Mesh` -> `UV Sphere`, scale it down small (`S`, then type `0.15`, `Enter`), and position it where one eye socket should go.
-3. Select the skull mesh -> Properties panel -> wrench icon -> `Add Modifier` -> `Boolean`.
-4. Set `Operation` to `Difference`, and set `Object` to the small sphere you just placed.
-5. Click the dropdown arrow next to the modifier -> `Apply`.
-6. Delete the small sphere (it's done its job).
-7. Repeat for the second eye socket (or duplicate the first sphere with `Shift+D` and mirror its X position before applying the boolean).
 
 #### Carve the Nasal Cavity
 
