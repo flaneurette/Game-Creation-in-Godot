@@ -74,7 +74,7 @@ If you want, you can also indent the skull on the top-sides slightly. Later-on, 
 
 > Note: We're not aiming for accuracy, but technique.
 
-After some more skull shaping with the `crease brush`, it now might look more like a real skull:
+After some more skull shaping with the `crease brush at 100px`, it now might look more like a real skull:
 
 <img src="Examples/SkullShaping5.png" />
 
