@@ -98,10 +98,12 @@ To attach more scripts, we can create sub-nodes/panels and add a script to each 
 
 Example:
 
+```
 Console (MarginContainer)
 └── ConsolePanel (Panel) - script: Console.gd
     ├── Log (RichTextLabel)
     └── CommandInput (LineEdit)
+```
 
 Select the parent through a script:
 
