@@ -22,7 +22,9 @@ Since the sphere is still low-poly, you need a way to add detail as you sculpt.
 #### Block Out the Cranium
 
 - In viewpoint (large round coordinate gizmo on the top right) Switch to `Left Orthographic` to adjust the back of the skull from the left-side.
-   
+
+<img src="Examples/SkullShapingView.png" />
+
 1. Select the `Grab` brush from the left menu. `Set radius to: 250`
 2. Click and drag on the top-back of the sphere to pull it slightly, elongating the rounded cranium shape - skulls aren't perfectly spherical, they're a bit longer back-to-front.
 3. Use `Grab` again on the lower-front area to start pulling out where the `jaw` will be - drag downward and slightly forward.
@@ -51,6 +53,10 @@ The sphere should now look like this:
 1. Switch to the `Crease` brush.
 2. Set `Radius: 44px` and `Strength: 0.3` low (~`0.2`) and carefully press in two oval-ish indentations below the brow ridge
 3. Switch to `Smooth` brush and soften the harsh edges around each socket.
+
+The Smooth tool can look like this:
+
+<img src="Examples/SkullShapingSmooth.png" />
 
 #### Carve the Nasal Cavity
 
