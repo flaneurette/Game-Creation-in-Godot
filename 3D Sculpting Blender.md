@@ -36,8 +36,9 @@ The sphere should now look like this:
 
 #### Build Up the Brow Ridge and Cheekbones
 
-In `symmetry`, tick `X` to `on` otherwise Blender does NOT create symmetric sculpting.
-
+- In viewpoint, witch to `Front Orthographic` view, to draw the eyes/ridges. - Do not drag around as you might create asymmetries.
+- In `symmetry`, tick `X` to `on` otherwise Blender does NOT create symmetric sculpting.
+ 
 1. Switch to the `Clay Strips` brush (found in the toolbar, or press `C`).
 2. Increase `Radius` and lower `Strength` in the top toolbar (around `0.3`) for controlled build-up.
 3. Paint two horizontal ridges above where the eyes will go - this is the brow ridge.
