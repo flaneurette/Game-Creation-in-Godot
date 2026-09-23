@@ -30,7 +30,7 @@ Since the sphere is still low-poly, you need a way to add detail as you sculpt.
 
 Don't worry about precision here - you're roughing out the big masses only.
 
-The sphere should not look like this:
+The sphere should now look like this:
 
 <img src="Examples/SkullShaping1.png" />
 
