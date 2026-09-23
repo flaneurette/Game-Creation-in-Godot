@@ -10,6 +10,15 @@ In-game preview:
 
 <img src="Examples/SkullScreen.png" />
 
+####  Getting reference images into Blender
+
+The tutorial was done without references. But it would be best if you have a photo of a real skull, and model around it. Many professionals also do this.
+
+- In Object Mode, Add > Image > Reference.
+
+Browse to a front-view skull photo, place it, then repeat for a side-view photo positioned on a different axis (rotate it 90° so it only shows up from the side view).
+These reference images sit in 3D space but don't interfere with sculpting - you just orbit around and eyeball your model against them from `Front/Left Orthographic`.
+
 #### Set Up the Base Shape
 
 1. `Add` -> `Mesh` -> `UV Sphere`.
