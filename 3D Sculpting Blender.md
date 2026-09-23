@@ -48,10 +48,8 @@ The sphere should now look like this:
 
 #### Carve the Eye Sockets
 
-`Option A - Sculpt them directly:`
-
 1. Switch to the `Crease` brush.
-2. Set `Radius: 44px` and `Strength: 0.3` low (~`0.2`) and carefully press in two oval-ish indentations below the brow ridge
+2. Set `Radius: 44px` and `Strength: 0.3` and carefully press in two oval-ish indentations below the brow ridge
 3. Switch to `Smooth` brush and soften the harsh edges around each socket.
 
 The Smooth tool can look like this:
