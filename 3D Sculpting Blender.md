@@ -6,6 +6,8 @@ Here we create a very simple stylized skull. Nothing special, and certainly not 
 
 This uses digital sculpting rather than box modeling - better suited to organic shapes. We'll keep it stylized/low-detail rather than anatomically precise, which is much more approachable for a first attempt. Works in Blender 3.x/4.x.
 
+In-game preview:
+
 <img src="Examples/SkullScreen.png" />
 
 #### Set Up the Base Shape
