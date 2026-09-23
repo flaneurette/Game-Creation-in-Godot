@@ -40,7 +40,7 @@ The sphere should now look like this:
 - In `symmetry`, tick `X` to `on` otherwise Blender does NOT create symmetric sculpting.
  
 1. Switch to the `Clay Strips` brush (found in the toolbar, or press `C`).
-2. Increase `Radius` and lower `Strength` in the top toolbar (around `0.3`) for controlled build-up.
+2. Increase `Radius: 66` and lower `Strength: 0.3` in the top toolbar, for controlled build-up.
 3. Paint two horizontal ridges above where the eyes will go - this is the brow ridge.
 4. Paint two smaller raised areas on the sides, roughly level with the middle of the face - these become the cheekbones (zygomatic arches).
 
