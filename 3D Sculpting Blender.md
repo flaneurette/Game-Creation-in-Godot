@@ -35,6 +35,8 @@ Don't worry about precision here - you're roughing out the big masses only.
 
 #### Build Up the Brow Ridge and Cheekbones
 
+In `symmetry`, tick `X` to `on` otherwise Blender does NOT create symmetric sculpting.
+
 1. Switch to the `Clay Strips` brush (found in the toolbar, or press `C`).
 2. Increase `Radius` and lower `Strength` in the top toolbar (around `0.3`) for controlled build-up.
 3. Paint two horizontal ridges above where the eyes will go - this is the brow ridge.
@@ -45,11 +47,13 @@ Don't worry about precision here - you're roughing out the big masses only.
 This is the trickiest part - two options:
 
 `Option A - Sculpt them directly:`
+
 1. Switch to the `Crease` brush.
 2. Set `Strength` low (~`0.2`) and carefully press in two oval-ish indentations below the brow ridge, spaced evenly from the center.
 3. Switch to `Smooth` brush and soften the harsh edges around each socket.
 
 `Option B - Boolean cutout (more precise, recommended for beginners):`
+
 1. Exit Sculpt Mode (`Tab` or switch back to Layout workspace).
 2. `Add` -> `Mesh` -> `UV Sphere`, scale it down small (`S`, then type `0.15`, `Enter`), and position it where one eye socket should go.
 3. Select the skull mesh -> Properties panel -> wrench icon -> `Add Modifier` -> `Boolean`.
