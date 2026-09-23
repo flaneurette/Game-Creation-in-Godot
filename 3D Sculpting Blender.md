@@ -73,7 +73,7 @@ The Smooth tool can look like this:
 #### Carve the Nasal Cavity
 
 1. Back in `Sculpt Mode`, use the `Crease` or `Draw Sharp` brush.
-2. Carve a small inverted-triangle shape below and between the eye sockets.
+2. Carve a small elongated triangle shape below and between the eye sockets.
 3. Use `Smooth` to blend the edges so it doesn't look like a harsh cut.
 
 #### Shape the Jaw
