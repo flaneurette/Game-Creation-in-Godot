@@ -26,9 +26,11 @@ Since the sphere is still low-poly, you need a way to add detail as you sculpt.
 1. Select the `Grab` brush from the left menu. `Set radius to: 250`
 2. Click and drag on the top-back of the sphere to pull it slightly, elongating the rounded cranium shape - skulls aren't perfectly spherical, they're a bit longer back-to-front.
 3. Use `Grab` again on the lower-front area to start pulling out where the jaw and face will be - drag downward and slightly forward.
-4. In viewpoint (round gizmo on the top right) Switch to `Front Orthographic` to adjust.
+4. In viewpoint (round gizmo on the top right) Switch to `Front Orthographic` to adjust the jaw and center it.
 
 Don't worry about precision here - you're roughing out the big masses only.
+
+<img src="Examples/SkullShaping1.png" />
 
 #### Build Up the Brow Ridge and Cheekbones
 
