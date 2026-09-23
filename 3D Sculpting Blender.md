@@ -109,6 +109,8 @@ By using lots of `crease` brushes at various sizes, we can conlcude it to this (
 
 <img src="Examples/SkullShaping6.png" />
 
+<img src="Examples/Skull-Animation.gif" />
+
 > Remember: this was done freehand, without any reference. Use a reference where possible.
 
 
