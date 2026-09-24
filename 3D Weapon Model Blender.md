@@ -57,6 +57,9 @@ Use sculpt mode when you want organic shapes, such as worn edges or a curved gri
 
 #### Export the pistol from Blender
 
+-  Save a copy
+-  Save current as `Weapon_Export.blend`
+-  Delete the camera node.
 -  Apply scale first: `Ctrl+A -> Scale` in Object Mode.
 -  Join the parts (select them all, `Ctrl+J`) or parent them to one object, so you get a single pistol.
 -  Go to `File -> Export -> glTF - 0 (.glb/.gltf)` and save it inside your Godot project folder.
