@@ -70,7 +70,7 @@ Yes, and it's easy in Godot. You attach the pistol to the hand bone so it follow
 1. Drag your Mixamo character scene into a new scene, or double-click the FBX and choose `New Inherited Scene`. This lets you edit the imported nodes.
 2. Find the `Skeleton3D` node in the scene tree.
 3. Right-click Skeleton3D -> `Add Child Node -> BoneAttachment3D`.
-4. Select the BoneAttachment3D and set `Bone Name` in the Inspector to the right hand, usually `mixamorig_RightHand`. Godot replaces the colon in Mixamo bone names with an underscore.
+4. Select the BoneAttachment3D and set `Bone Name` in the Inspector to the right hand, you can select where the object needs to be attached to. Like right hand, for example.
 5. Drag your pistol `.glb` into the scene as a `child of the BoneAttachment3D`.
 
 The pistol now follows the hand during the run animation.
