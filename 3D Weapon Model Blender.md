@@ -17,13 +17,11 @@ Here we create a 3D model of a weapon with a silencer. It seems daunting, but it
 - Add a cube, elongated, under the bullet chamber.
 - Add a cube as the `finger grip`.
 
-Tip: press `Ctrl+A -> Scale` after resizing objects so later tools behave properly.
-
 #### Shape the finger grip
 
--  Switch to the `Modeling` workspace (tab at the top).
+-  Switch to the `Modeling` workspace
 -  Select the `Poly Build` tool in the left toolbar.
--  Shape the finger grip. Do the same for the handgrip and any other parts.
+-  Shape the finger grip. Do the same for the handgrip and other parts.
 
 #### Cut the finger grip hole
 
@@ -38,7 +36,7 @@ The hole is now cut. If a thin plane is left behind, repeat steps 4-6 on the opp
 
 #### Finish
 
-That's the basic model. Most of the work is placing and aligning the parts. From here you can refine it with `Bevel` (Ctrl+B), a `Subdivision Surface` modifier, and detail work.
+That is the basic model. Most of the work is placing and aligning the parts. From here you can refine it with `Bevel` (Ctrl+B), a `Subdivision Surface` modifier, and detail work.
 
 #### Sculpt an item (optional)
 
