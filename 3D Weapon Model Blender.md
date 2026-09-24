@@ -55,3 +55,35 @@ Use sculpt mode when you want organic shapes, such as worn edges or a curved gri
 
 `Tip:` Sculpt each part separately. Sculpting works on one object at a time, so select the item first, then switch modes.
 
+Yes, and it's easy in Godot. You attach the pistol to the hand bone so it follows the animation.
+
+#### Export the pistol from Blender
+
+1. Apply scale first: `Ctrl+A -> Scale` in Object Mode.
+2. Join the parts (select them all, `Ctrl+J`) or parent them to one object, so you get a single pistol.
+3. Go to `File -> Export -> glTF 2.0 (.glb/.gltf)` and save it inside your Godot project folder.
+
+# In Godot
+
+#### Attach it in Godot
+
+1. Drag your Mixamo character scene into a new scene, or double-click the FBX and choose `New Inherited Scene`. This lets you edit the imported nodes.
+2. Find the `Skeleton3D` node in the scene tree.
+3. Right-click Skeleton3D -> `Add Child Node -> BoneAttachment3D`.
+4. Select the BoneAttachment3D and set `Bone Name` in the Inspector to the right hand, usually `mixamorig_RightHand`. Godot replaces the colon in Mixamo bone names with an underscore.
+5. Drag your pistol `.glb` into the scene as a `child of the BoneAttachment3D`.
+
+The pistol now follows the hand during the run animation.
+
+#### Position it in the hand
+
+1. Play the run animation with the AnimationPlayer so the hand is in its typical pose.
+2. Select the pistol node and adjust its `position and rotation` in the Inspector until the grip sits in the palm, with the barrel pointing forward.
+3. Adjust `scale` too. Mixamo characters are often imported at 0.01 or 100x scale, so the pistol may look huge or tiny at first.
+
+#### Tips
+
+- `Pivot point:` in Blender, place the pistol's origin at the handgrip (`Object -> Set Origin`, or move the 3D cursor there first). This makes fitting it to the hand much easier in Godot.
+- `Left hand:` Mixamo pistol animations often have the second hand supporting the gun. It won't grip on its own, so use the pose from the animation, or add IK later if you want it exact.
+- `Swapping weapons:` since the pistol is just a child of the BoneAttachment3D, you can show, hide, or replace it in code.
+
