@@ -13,7 +13,7 @@ Texture = an image or pattern applied on top of it. Start with materials, since 
 5. Set `Metallic` to about 0.8 to 1.0 and `Roughness` to about 0.3 to 0.4. Lower roughness means shinier.
 6. Repeat for the other parts. Click the dropdown next to the material name to reuse an existing material on another object instead of making a new one.
 
-#### See the result`
+#### See the result
 
 The default Solid viewport doesn't show materials well. Switch the viewport shading (the row of four sphere icons at the top right of the viewport) to `Material Preview`. Metallic surfaces look black or dull unless there's something to reflect, and Material Preview supplies that lighting. Or press `Z` and pick Material Preview from the pie menu.
 
