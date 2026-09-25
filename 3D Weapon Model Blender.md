@@ -83,6 +83,6 @@ The pistol now follows the hand during the run animation.
 #### Tips
 
 - `Pivot point:` in Blender, place the pistol's origin at the handgrip (`Object -> Set Origin`, or move the 3D cursor there first). This makes fitting it to the hand much easier in Godot.
-- `Left hand:` Mixamo pistol animations often have the second hand supporting the gun. It won't grip on its own, so use the pose from the animation, or add IK later if you want it exact.
+- `Left hand:` Mixamo pistol animations often have the second hand supporting the gun.
 - `Swapping weapons:` since the pistol is just a child of the BoneAttachment3D, you can show, hide, or replace it in code.
 
