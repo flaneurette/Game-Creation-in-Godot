@@ -12,6 +12,8 @@ In-game preview:
 
 ####  Getting reference images into Blender
 
+> Note: Use a good reference, as many skull references are badly photographed (from up close) and are distorted in real-world size. A skull is usually smaller than we think it is. If unsure, just start with a round ball as basic block, and add/carve from that, except for the lower jaw.
+
 The tutorial was done without references. But it would be best if you have a photo of a real skull, and model around it. Many professionals also do this.
 
 - In Object Mode, Add > Image > Reference.
