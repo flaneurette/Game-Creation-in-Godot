@@ -2,16 +2,16 @@
 
 Material = the surface color and shininess. 
 
-Texture = an image or pattern applied on top of it. Start with materials, since that's what your pistol needs.
+Texture = an image or pattern applied on top of it.
 
 #### Add a basic material
 
-1. In `Object Mode`, click the part you want to color
-2. Open the `Material tab` in the Properties panel on the right. It's the icon at the bottom of the tab column, a red-and-white sphere.
-3. Click `New`. Blender creates a material with a default shader called Principled BSDF.
-4. Click the `Base Color` field and pick a color. For gun metal, use a dark grey.
-5. Set `Metallic` to about 0.8 to 1.0 and `Roughness` to about 0.3 to 0.4. Lower roughness means shinier.
-6. Repeat for the other parts. Click the dropdown next to the material name to reuse an existing material on another object instead of making a new one.
+- In `Object Mode`, click the part you want to color
+- Open the `Material tab` in the Properties panel on the right. It's the icon at the bottom of the tab column, a red-and-white sphere.
+- Click `New`. Blender creates a material with a default shader called Principled BSDF.
+- Click the `Base Color` field and pick a color. 
+- Set `Metallic` to about 0.8 to 1.0 and `Roughness` to about 0.3 to 0.4. Lower roughness means shinier.
+- Repeat for the other parts. Click the dropdown next to the material name to reuse an existing material on another object instead of making a new one.
 
 #### See the result
 
@@ -19,12 +19,12 @@ The default Solid viewport doesn't show materials well. Switch the viewport shad
 
 #### Adding a texture (an image)
 
-1. In the Material tab, click the small dot or circle next to `Base Color`.
-2. Choose `Image Texture` and click `Open` to load an image file, such as a metal or wood grain photo.
-3. Blender needs to know how to wrap the image around the object. This is called `UV mapping`. For simple shapes, go to Edit Mode, press `A`, then `U -> Smart UV Project`.
-4. Check the result in Material Preview.
+- In the Material tab, click the small dot or circle next to `Base Color`.
+- Choose `Image Texture` and click `Open` to load an image file, such as a metal or wood grain photo.
+- Blender needs to know how to wrap the image around the object. This is called `UV mapping`. For simple shapes, go to Edit Mode, press `A`, then `U -> Smart UV Project`.
+- Check the result in Material Preview.
 
-`Easier alternatives to image textures`
+Alternatives to image textures:
 
 - Use a `Noise Texture` or `Bump` node for scratches and roughness without needing an image.
 - Websites like `Poly Haven` offer free PBR materials (metal, wood, leather) that you can download and plug in.
