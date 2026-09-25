@@ -17,7 +17,7 @@ The collision is now part of the imported scene, so every instance you place has
 
 > Note: If you create a RigidBody3D, it will respond to Physics. Like a ladder will immediately fall over, unless it leans on something. A StaticBodyMesh ladder won't fall over.
 
-#### Attach object to another object
+### Attach object to another object
 
 This is mainly useful for animation, such as attaching a weapon to a right hand, inside an animation.
 
