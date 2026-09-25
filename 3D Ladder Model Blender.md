@@ -2,6 +2,8 @@
 
 A quick tutorial for creating a basic ladder using two side rails and several rungs. Works in Blender 3.x/4.x.
 
+<img src="Examples/Ladder.png" />
+
 #### Set Up the Scene
 
 1. Open Blender - you'll see the default cube.
