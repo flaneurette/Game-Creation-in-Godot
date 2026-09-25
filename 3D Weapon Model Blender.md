@@ -36,6 +36,10 @@ The hole is now cut. If a thin plane is left behind, repeat steps 4-6 on the opp
 
 #### Finish
 
+-  Switch to the `Modeling` workspace
+-  Select the `Poly Build` tool in the left toolbar.
+-  Adjust all edges, pull them in/out so that the blockyness of the squares is gone.
+
 That is the basic model. Most of the work is placing and aligning the parts. From here you can refine it with `Bevel` (Ctrl+B), a `Subdivision Surface` modifier, and detail work.
 
 #### Sculpt an item (optional)
