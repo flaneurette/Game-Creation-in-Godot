@@ -1,6 +1,6 @@
 # Godot Snippets Cheat Sheet
 
-Common, reusable GDScript patterns. Most interactables in Godot boil down to the same handful of building blocks
+Common, reusable GDScript patterns and a handful of building blocks
 
 ---
 
