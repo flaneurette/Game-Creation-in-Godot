@@ -43,7 +43,7 @@ var is_on_ladder: bool = false
 var climb_speed: float = 1.0
 
 func _ready():
-	# This is important~
+	# This is important!
 	add_to_group("player")
 
 func _physics_process(delta):
