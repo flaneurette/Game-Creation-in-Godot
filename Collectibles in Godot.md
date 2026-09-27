@@ -31,9 +31,9 @@ func _ready() -> void:
 
 func _on_body_entered(body: Node3D) -> void:
 	if body.is_in_group("player"):
-    body.collected_weapon = true
-    body.collected_type = 'gun'
-    body.current_collectible = self
-    # Hide the weapon, means it is collected:
-    visible = false
+		body.collected_weapon = true
+		body.collected_type = 'gun'
+		body.current_collectible = self
+		# Hide the weapon, means it is collected:
+		visible = false
 ```
