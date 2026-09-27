@@ -391,8 +391,8 @@ func _process(delta):
 
 #### Debugging checklist
 
-- `Invalid assignment of property or key` -> the variable isn't declared on the target script. See #3.
+- `Invalid assignment of property or key` -> the variable isn't declared on the target script. See "Declaring variables another script will set".
 - Signal never fires (`body_entered` silent) -> check Layer/Mask overlap between the two objects; this is the most common silent failure in 3D.
-- Player bumps into something that should be walk-through -> it still has solid collision (`StaticBody3D`) on top of/instead of the `Area3D` trigger. See #6.
-- Object drifts / stutters while moving along an angled surface -> you're using world-axis (`velocity.y`) instead of the object's own local axis. See #5.
+- Player bumps into something that should be walk-through -> it still has solid collision (`StaticBody3D`) on top of/instead of the `Area3D` trigger. See "Layers & masks quick reference".
+- Object drifts / stutters while moving along an angled surface -> you're using world-axis (`velocity.y`) instead of the object's own local axis. See "Moving along a rotated object's own axis".
 - `Debug -> Visible Collision Shapes` (top menu while running) draws all collision shapes as green outlines - the fastest way to see what's actually overlapping what.
