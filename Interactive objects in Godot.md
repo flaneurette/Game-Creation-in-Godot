@@ -15,9 +15,11 @@ In Project -> Project Settings -> Input Map, add two actions:
 
 - Add `StaticBody3D` to the ladder object.
 - Add a child to the statisbody: `CollisionShape3D`
-- Set these dimensions in `transform` -> `scale`: `X: 1.0, Y: 24.0, Z: 0.1`
+- Set these dimensions in `transform` -> `scale`: `X: 1.0, Y: 24.0, Z: 0.2`
 
-The ladder now has a fixed Collision shape, so the player cannot walk through it. Set Y to the height of your ladder. (24 meters in our case)
+The ladder now has a fixed Collision shape, so the player cannot walk through it. Set Y to the height of your ladder. (24 meters in our case).
+
+> Note: Be sure to make the `Z` smaller than the next trigger zone, otherwise, the player cannot climb.
 
 #### Setup the ladder 3D area
 
