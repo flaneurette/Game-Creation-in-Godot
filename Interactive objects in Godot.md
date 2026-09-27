@@ -4,13 +4,6 @@ In this text we are going to create a climable object, like a ladder. We assume 
 
 > Note: It is important to realize that we cannot have a collision placed on the ladder itself. If there is one, remove it by re-importing the `.glb` model and tick `off` the physics checkbox. We add a collision on it ourselves manually.
 
-#### Set up input actions
-
-In Project -> Project Settings -> Input Map, add two actions:
-
-- `climbup` - bind to e.g. W / Up Arrow
-- `climbdown` - bind to e.g. S / Down Arrow
-
 #### Create our own solid ladder.
 
 - Add `StaticBody3D` to the ladder object.
@@ -90,6 +83,16 @@ func _on_body_exited(body: Node3D) -> void:
 
 > Note: If you get a stuttering climb effect, it probably means the player climbs at an angle. Adjust `w/s` keys to get on the ladder again. This is exactly as it behaves in real life.
 
+#### Set up input actions
+
+In Project -> Project Settings -> Input Map, add two actions:
+
+- `climbup` - bind to e.g. W / Up Arrow
+- `climbdown` - bind to e.g. S / Down Arrow
+
+#### Test it!
+
+Now run the game and test it. It should work.
 
 #### Layers (extra)
 
