@@ -24,16 +24,34 @@ The blue lines are the CollisionShape3D areas, which we need to let the player r
 Add this script to the `Area3D` of the Weapon node:
 
 ```
-extends Area3D
+extends Node3D
+
+@onready var area: Area3D = $Area3D
 
 func _ready() -> void:
-	body_entered.connect(_on_body_entered)
+	area.body_entered.connect(_on_body_entered)
 
 func _on_body_entered(body: Node3D) -> void:
 	if body.is_in_group("player"):
 		body.collected_weapon = true
 		body.collected_type = 'gun'
 		body.current_collectible = self
-		# Hide the weapon, means it is collected:
 		visible = false
+		GameManager.bullets += 30
+		EventBus.player_ammo_changed.emit(30, 30)
 ```
+
+> Note: The above script assumes you have the `EventBus` and `GamwManager` autoloads. They basically signal the HUD to increase ammunition count with 30 bullets.
+
+#### Player script
+
+Add this to your player script logic:
+
+```
+# Collectibles
+var collected_weapon: bool = false
+var collected_type: String = ""
+var current_collectible: Node3D = null
+```
+
+To later utilize it.
