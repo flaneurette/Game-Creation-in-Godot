@@ -80,3 +80,22 @@ func _on_body_exited(body: Node3D) -> void:
 ```
 
 > Note: If you get a stuttering climb effect, it probably means the player climbs at an angle. Adjust `w/s` keys to get on the ladder again. This is exactly as it behaves in real life.
+
+
+#### Layers (extra)
+
+The core rule
+
+- Layer = "what am I."
+- Mask = "what do I look for / react to."
+
+Two bodies interact if either one's Mask includes the other's Layer. It doesn't need to be mutual.
+
+Example:
+
+- Ladder (Layer 4) with Mask 1 will collide with a Wall (Layer 1), even if the Wall's Mask doesn't include layer 4.
+
+Where to set it
+
+- Select a CollisionShape3D's parent body (StaticBody3D, RigidBody3D, CharacterBody3D, Area3D) -> Inspector -> Collision section -> Layer and Mask checkboxes.
+- Name your layers so the checkboxes show labels instead of numbers: Project -> Project Settings -> Layer Names -> 3D Physics
