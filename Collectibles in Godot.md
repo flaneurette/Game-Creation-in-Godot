@@ -41,7 +41,7 @@ func _on_body_entered(body: Node3D) -> void:
 		EventBus.player_ammo_changed.emit(30, 30)
 ```
 
-> Note: The above script assumes you have the `EventBus` and `GamwManager` autoloads. They basically signal the HUD to increase ammunition count with 30 bullets.
+> Note: The above script assumes you have the `EventBus` and `GameManager` autoloads. They basically signal the HUD to increase ammunition count with 30 bullets. You could change it to suit your own logic. If in doubt, look at the GamenManager script included in `Autoload`
 
 #### Player script
 
