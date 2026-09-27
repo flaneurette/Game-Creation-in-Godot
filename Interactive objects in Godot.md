@@ -1,16 +1,6 @@
 # Add interactive objects in Godot
 
-In this text we are going to create a climable object, like a ladder. We assume you already ran the `ladder.md` tutorial to create a 3D ladder. Also, make sure the ladder itself already has a collision shape to it, so that you cannot walk through it. This can be done most easily upon import of the `.glb`
-
-#### Setup the 3D model.
-
-- In the filelist, select your 3D model.
-- Double click it
-- Tick `on` Physics.
-- Make sure Body Type set to StaticBody3D
-- Click `Reimport`
-
-This makes sure the model now has a collider.
+In this text we are going to create a climable object, like a ladder. We assume you already ran the `ladder.md` tutorial to create a 3D ladder.
 
 #### Setup the ladder 3D area
 
