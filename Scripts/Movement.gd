@@ -16,7 +16,15 @@ const CROUCH_LERP_SPEED = 10.0
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var is_crouching = false
 var standing_camera_y: float
-
+# Ladder logic
+var is_on_ladder: bool = false
+var current_ladder: Area3D = null
+var climb_speed: float = 1.0
+# Collectibles
+var collected_weapon: bool = false
+var collected_type: String = ""
+var current_collectible: Node3D = null
+		
 # type must match GameManager's resource names exactly.
 # range: how far the raycast reaches. splash_radius: 0 = single-target hit,
 # >0 = also damages everything with take_damage() within that radius of the hit point.
@@ -29,10 +37,11 @@ var weapons = [
 var current_weapon_index = -1
 
 func _ready():
+	add_to_group("player")
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	standing_camera_y = camera.position.y
 	_update_ammo_hud()
-
+		
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * MOUSE_SENSITIVITY)
@@ -49,6 +58,13 @@ func _unhandled_input(event):
 		_try_talk()
 
 func _physics_process(delta):
+		
+	if is_on_ladder:
+		var input_dir := Input.get_axis("climbdown", "climbup")
+		var ladder_up: Vector3 = current_ladder.global_transform.basis.y.normalized()
+		velocity = ladder_up * input_dir * climb_speed
+		move_and_slide()
+		
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 

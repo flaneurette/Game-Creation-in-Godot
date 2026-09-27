@@ -1,6 +1,6 @@
 extends CanvasLayer
-## Shown when the player dies: covers the screen with a panel and freezes the game.
-## Assign the picture in the Inspector (Image) on the DeathScreen node.
+# Shown when the player dies: covers the screen with a panel and freezes the game.
+# Assign the picture in the Inspector (Image) on the DeathScreen node.
 
 @export var image: Texture2D
 
