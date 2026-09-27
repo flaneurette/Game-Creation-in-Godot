@@ -17,15 +17,13 @@ var collected_weapon: bool = false
 var collected_type: String = ""
 var current_collectible: Node3D = null
 ```
-
 ---
 
 #### Show a GUI item
 
-```
+```gdscript
 @export var collectible_type: String = "gun"
 ```
-
 ---
 
 #### Register something in a group
@@ -63,7 +61,15 @@ The target object just needs an `interact()` method:
 func interact() -> void:
 	print("Door opened!")
 ```
+---
 
+#### Hide a item or object dynamically
+
+```gdscript
+func _on_player_died() -> void:
+	visible = false
+	get_tree().paused = true
+```
 ---
 
 #### Custom signals (objects announcing events)
@@ -238,7 +244,6 @@ func _physics_process(delta):
 		State.ATTACKING:
 			pass
 ```
-
 ---
 
 #### Health / damage pattern
@@ -261,7 +266,6 @@ func _on_body_entered(body: Node3D) -> void:
 	if body.has_method("take_damage"):
 		body.take_damage(10)
 ```
-
 ---
 
 #### Debugging checklist
