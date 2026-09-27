@@ -11,11 +11,17 @@ In Project -> Project Settings -> Input Map, add two actions:
 - `climbup` - bind to e.g. W / Up Arrow
 - `climbdown` - bind to e.g. S / Down Arrow
 
+#### Create our own solid ladder.
+
+- Add `StaticBody3D` to the ladder object.
+- Add a child to the statisbody: `CollisionShape3D`
+- Set these dimensions in `transform` -> `scale`: `X: 1.0, Y: 24.0, Z: 0.1`
+
+The ladder now has a fixed Collision shape, so the player cannot walk through it. Set Y to the height of your ladder. (24 meters in our case)
+
 #### Setup the ladder 3D area
 
-Add the climbable trigger zone
-
-The .glb mesh itself has no collision/trigger logic.
+Add the climbable trigger zone.
 
 - Right-click the ladder node in the Scene panel -> Add Child Node  -> search for `Area3D` -> Add.
 - Right-click that new `Area3D` -> Add Child Node -> search for `CollisionShape3D` -> Add.
