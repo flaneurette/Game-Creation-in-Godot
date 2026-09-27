@@ -32,7 +32,7 @@ Set its Layer to whatever you're using for triggers/interactables (e.g. layer 3,
 
 #### Movement.gd
 
-Add this script to your `Player` scripts
+Add this code to your `Player` scripts.
 
 ```
 var current_ladder: Area3D = null
@@ -54,7 +54,7 @@ func _physics_process(delta):
 
 #### Climbing.gd
 
-Add:
+Add this script to the `Area3D` of the ladder node:
 
 ```
 extends Area3D
