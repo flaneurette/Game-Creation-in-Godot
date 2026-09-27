@@ -4,6 +4,13 @@ In this text we are going to create a climable object, like a ladder. We assume 
 
 > Note: It is important to realize that we cannot have a collision placed on the ladder itself. If there is one, remove it by re-importing the `.glb` model and tick `off` the physics checkbox.
 
+#### Set up input actions
+
+In Project -> Project Settings -> Input Map, add two actions:
+
+- `climbup` - bind to e.g. W / Up Arrow
+- `climbdown` - bind to e.g. S / Down Arrow
+
 #### Setup the ladder 3D area
 
 Add the climbable trigger zone
@@ -32,6 +39,10 @@ The code follows the ladder, even if it is placed at an angle.
 var current_ladder: Area3D = null
 var is_on_ladder: bool = false
 var climb_speed: float = 1.0
+
+func _ready():
+	# This is important~
+	add_to_group("player")
 
 func _physics_process(delta):
 	
