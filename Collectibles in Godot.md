@@ -2,6 +2,8 @@
 
 As example, we create a collectible gun prop.
 
+We create a scene, because we can then reuse it across the game, wherever we wish it to be.
+
 - Create new scene, call it: `CollectGun.tscn`
 - Add your 3D model of a weapon
 - Add a childnode: Area3D -> CollisionShape3D -> Then select BoxShape3D
