@@ -19,7 +19,7 @@ it should look like this:
 The blue lines are the CollisionShape3D areas, which we need to let the player run into, and trigger an event that updates our player with having an extra weapon, ammo or health. Depending on what we want.
 
 
-#### Collectible.gd
+#### CollectibleWeapon.gd
 
 Drag this script to the `3DModel` of the Weapon node, in our case `WeaponSilencer`
 
@@ -55,3 +55,7 @@ var current_collectible: Node3D = null
 ```
 
 To later utilize it.
+
+### Finish
+
+This is basically it! You can so the same for any other object, like collecting health bars, points or other collectibles. Create a scene for each and use a dedicated script for each scene.
