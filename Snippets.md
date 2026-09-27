@@ -266,7 +266,128 @@ func _on_body_entered(body: Node3D) -> void:
 	if body.has_method("take_damage"):
 		body.take_damage(10)
 ```
+
 ---
+
+#### Collectibles
+
+```gdscript
+extends Node3D
+
+@onready var area: Area3D = $Area3D
+
+func _ready() -> void:
+	area.body_entered.connect(_on_body_entered)
+
+func _on_body_entered(body: Node3D) -> void:
+	if body.is_in_group("player"):
+		body.collected_weapon = true
+		body.collected_type = 'gun'
+		body.current_collectible = self
+		visible = false
+		GameManager.bullets += 30
+		EventBus.player_ammo_changed.emit(30, 30)
+```
+
+
+#### Textures / images
+
+```gdscript
+extends CanvasLayer
+
+@export var gun_icon: Texture2D
+@export var explosives_icon: Texture2D
+@export var knife_icon: Texture2D
+
+@export var icon_size: Vector2 = Vector2(32, 32)
+@export var icon_color: Color = Color.WHITE
+@export_range(0.0, 1.0) var icon_opacity: float = 1.0
+
+@onready var texture_rect: TextureRect = $MarginContainer/TextureRect
+
+var icons: Dictionary
+var active_tween: Tween
+
+func _ready() -> void:
+	icons = {
+		"gun": gun_icon,
+		"explosives": explosives_icon,
+		"knife": knife_icon,
+	}
+	texture_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	texture_rect.custom_minimum_size = icon_size
+	texture_rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	texture_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	texture_rect.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	texture_rect.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	texture_rect.modulate = Color(icon_color.r, icon_color.g, icon_color.b, 0.0)
+```
+
+---
+
+#### HUD
+
+```gdscript
+extends CanvasLayer
+## Attach this script to the CanvasLayer node.
+## Update the NodePaths below to match your actual scene tree.
+
+@onready var health_bar: ProgressBar = $HUD/HealthPanel/HealthBar
+@onready var health_label: RichTextLabel = $HUD/HealthPanel/HealthLabel
+@onready var ammo_bar: ProgressBar = $HUD/AmmoPanel/AmmoBar
+@onready var ammo_label: RichTextLabel = $HUD/AmmoPanel/AmmoLabel
+
+func _ready() -> void:
+	ammo_label.bbcode_enabled = true
+	health_label.bbcode_enabled = true
+	health_bar.value = GameManager.health
+	ammo_bar.max_value = GameManager.getMaxAmmo('gun')
+	ammo_bar.value = GameManager.bullets
+
+	EventBus.player_health_changed.connect(_on_health_changed)
+	EventBus.player_ammo_changed.connect(_on_ammo_changed)
+
+func _on_health_changed(current: int, max_health: int) -> void:
+	health_bar.max_value = max_health
+	health_bar.value = current
+	health_label.text = "%d / %d" % [current, max_health]
+
+func _on_ammo_changed(current: int, max_ammo: int) -> void:
+	ammo_bar.max_value = max_ammo
+	ammo_bar.value = current
+	var color := "white" if current > 0 else "#ff3333"
+	ammo_label.text = "[color=%s]%d[/color] / %d" % [color, current, max_ammo]
+```
+---
+
+#### Noise texture
+
+```gdscript
+extends Sprite2D
+
+var noise: FastNoiseLite
+var noise_texture: NoiseTexture2D
+
+func _ready():
+	noise = FastNoiseLite.new()
+	noise.noise_type = FastNoiseLite.TYPE_PERLIN
+	noise.frequency = 0.02
+	noise.fractal_type = FastNoiseLite.FRACTAL_FBM
+	noise.fractal_octaves = 4
+	noise.fractal_lacunarity = 2.0
+	noise.fractal_gain = 0.5
+
+	noise_texture = NoiseTexture2D.new()
+	noise_texture.width = 512
+	noise_texture.height = 512
+	noise_texture.noise = noise
+	noise_texture.seamless = true  # important for tiling/scrolling
+
+	texture = noise_texture
+	
+func _process(delta):
+	noise.offset += Vector3(delta * 5.0, 0, 0)  # drift clouds sideways
+```
 
 #### Debugging checklist
 
