@@ -19,3 +19,21 @@ it should look like this:
 The blue lines are the CollisionShape3D areas, which we need to let the player run into, and trigger an event that updates our player with having an extra weapon, ammo or health. Depending on what we want.
 
 
+#### Collectible.gd
+
+Add this script to the `Area3D` of the Weapon node:
+
+```
+extends Area3D
+
+func _ready() -> void:
+	body_entered.connect(_on_body_entered)
+
+func _on_body_entered(body: Node3D) -> void:
+	if body.is_in_group("player"):
+    body.collected_weapon = true
+    body.collected_type = 'gun'
+    body.current_collectible = self
+    # Hide the weapon, means it is collected:
+    visible = false
+```
