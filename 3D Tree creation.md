@@ -10,12 +10,12 @@ Buy one "Hero Tree", which is a paid tree which looks gorgeous. Behind it, place
 
 Sapling Tree Gen is an add-on, so it may need to be switched on first.
 
-### Enable the Sapling Tree Gen add-on
+#### Enable the Sapling Tree Gen add-on
 
 - `<= Blender 4.1: Edit > Preferences > Add-ons, search "Sapling" and tick the box.`
 - `>= Blender 4.2: Edit > Preferences > Get Extensions, search "Sapling Tree Gen" and install it.`
 
-### Create the tree
+#### Create the tree
 
 1. Hover your mouse over the 3D viewport and press **Shift+A**.
 2. Choose Curve > Sapling Tree Gen (in some versions the entry is called "Add Tree").
@@ -24,7 +24,7 @@ Sapling Tree Gen is an add-on, so it may need to be switched on first.
 
 > This is a small rectangular box at the lower left in the viewport. The panel only stays editable until you do something else, so tweak the tree straight away.
 
-### Customize the tree
+#### Customize the tree
 
 | Tab | What it does |
 | --- | --- |
@@ -36,7 +36,7 @@ Sapling Tree Gen is an add-on, so it may need to be switched on first.
 
 Change the seed value to get a different variation of the same tree.
 
-### Add materials
+#### Add materials
 
 The trunk and the leaves are separate objects, so each needs its own material.
 
@@ -66,13 +66,13 @@ After, go back to modeling, press N, in the Baker: click "Bake Now"
 
 <img src="Examples/BakeExport.png" />
 
-### Export
+#### Export
 
 Click export to FBX or GLB
 
 ---
 
-### Make a forest (scattering many trees)
+#### Make a forest (scattering many trees)
 
 **Quick method: duplicate**
 
