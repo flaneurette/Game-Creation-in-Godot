@@ -24,6 +24,8 @@ Sapling Tree Gen is an add-on, so it may need to be switched on first.
 
 > This is a small rectangular box at the lower left in the viewport. The panel only stays editable until you do something else, so tweak the tree straight away.
 
+<img src="Examples/SaplingGen.png" />
+
 #### Customize the tree
 
 | Tab | What it does |
