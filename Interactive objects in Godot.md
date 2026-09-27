@@ -8,6 +8,7 @@ In this text we are going to create a climable object, like a ladder. We assume 
 - Double click it
 - Tick `on` Physics.
 - Make sure Body Type set to StaticBody3D
+- Click `Reimport`
 
 This makes sure the model now has a collider.
 
