@@ -2,6 +2,8 @@
 
 In this text we are going to create a climable object, like a ladder. We assume you already ran the `ladder.md` tutorial to create a 3D ladder.
 
+> Note: It is important to realize that we cannot have a collision placed on the ladder itself. If there is one, remove it by re-importing the `.glb` model and tick `off` the physics checkbox.
+
 #### Setup the ladder 3D area
 
 Add the climbable trigger zone
