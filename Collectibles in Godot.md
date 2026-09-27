@@ -2,7 +2,7 @@
 
 As example, we create a collectible gun prop.
 
-- Create new scene, call it" "CollectGun.tscn"
+- Create new scene, call it: `CollectGun.tscn`
 - Add your 3D model of a weapon
 - Add a childnode: Area3D -> CollisionShape3D -> Then select BoxShape3D
 
