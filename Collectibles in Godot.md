@@ -6,6 +6,8 @@ As example, we create a collectible gun prop.
 - Add your 3D model of a weapon
 - Add a childnode: Area3D -> CollisionShape3D -> Then select BoxShape3D
 
+<img src="Examples/NodeListWeapon.png" />
+
 Adjust the `Z` scale to: 5.0
 
 it should look like this:
