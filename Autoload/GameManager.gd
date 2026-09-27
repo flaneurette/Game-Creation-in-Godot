@@ -8,11 +8,11 @@ var health: int = 100
 # score board
 var score: int = 0
 # gun bullets
-var bullets: int = 30
+var bullets: int = 0
 # grenades, explosives, etc
-var explosives: int = 3
+var explosives: int = 0
 # knives wear down after use, decrease by 2
-var knives: int = 20
+var knives: int = 0
 
 # Max values - used by the HUD to size ammo bars per weapon type.
 const MAX_BULLETS: int = 30
