@@ -21,7 +21,7 @@ The blue lines are the CollisionShape3D areas, which we need to let the player r
 
 #### Collectible.gd
 
-Add this script to the `Area3D` of the Weapon node:
+Add this script to the `3DModel` of the Weapon node, in our case "GunSilencer"
 
 ```
 extends Node3D
