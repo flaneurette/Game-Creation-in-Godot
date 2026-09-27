@@ -86,8 +86,8 @@ func _on_body_exited(body: Node3D) -> void:
 
 The core rule
 
-- Layer = "what am I."
-- Mask = "what do I look for / react to."
+- Layer: what an object is in relation to it.
+- Mask: what it reacts to when interacted with.
 
 Two bodies interact if either one's Mask includes the other's Layer. It doesn't need to be mutual.
 
