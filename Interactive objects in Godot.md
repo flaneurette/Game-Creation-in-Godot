@@ -33,9 +33,8 @@ func _physics_process(delta):
 	
 	if is_on_ladder:
 		var input_dir := Input.get_axis("climbdown", "climbup")
-		velocity.y = input_dir * climb_speed
-		velocity.x = 0
-		velocity.z = 0
+		var ladder_up: Vector3 = current_ladder.global_transform.basis.y.normalized()
+		velocity = ladder_up * input_dir * climb_speed
 		move_and_slide()
 	else:
 	 # other scripts or pass:
