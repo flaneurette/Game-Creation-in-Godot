@@ -24,6 +24,8 @@ Set its Layer to whatever you're using for triggers/interactables (e.g. layer 3,
 
 Add this code to your `Player` scripts.
 
+The code follows the ladder, even if it is placed at an angle.
+
 ```
 var current_ladder: Area3D = null
 var is_on_ladder: bool = false
@@ -63,3 +65,5 @@ func _on_body_exited(body: Node3D) -> void:
 		body.current_ladder = null
 
 ```
+
+> Note: If you get a stuttering climb effect, it probably means the player climbs at an angle. Adjust `w/s` keys to get on the ladder again. This is exactly as it behaves in real life.
