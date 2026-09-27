@@ -10,13 +10,15 @@ We create a scene, because we can then reuse it across the game, wherever we wis
 
 <img src="Examples/NodeListWeapon.png" />
 
-In `transform` in the right pane, adjust the `Z` scale to: 5.0, so that it covers the entire weapon.
+Select the `BoxShape3D` and drag the red points to make it cover the weapon.
 
 it should look like this:
 
 <img src="Examples/WeaponBox.png" />
 
 The blue lines are the CollisionShape3D areas, which we need to let the player run into, and trigger an event that updates our player with having an extra weapon, ammo or health. Depending on what we want.
+
+If that fails, you could also set: In `transform` in the right pane, adjust the `Z` scale to: 5.0, so that it covers the entire weapon. Godot will complain, however.
 
 
 #### CollectibleWeapon.gd
