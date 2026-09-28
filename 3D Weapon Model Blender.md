@@ -90,3 +90,31 @@ The pistol now follows the hand during the run animation.
 - `Left hand:` Mixamo pistol animations often have the second hand supporting the gun.
 - `Swapping weapons:` since the pistol is just a child of the BoneAttachment3D, you can show, hide, or replace it in code.
 
+
+# Bonus: Create explosives
+
+<img src="Examples/Dynamite.png" />
+
+Dynamite:
+
+- Add 6 cilinders and shape them in the transform window.
+- Press A, and Ctrl+J in edit-mode to join all dynamite together.
+- Apply a color to it in the materials tab, like a deep red.
+
+Fuse:
+
+- Add `Curve` -> `Bezier` for a thin fuse wire.
+- Apply a color to it in the materials tab, like a deep brown
+
+Band:
+
+Press A, and Ctrl=J in edit-mode to join everything.
+
+- In edit-mode, click `Mesh` -> `Convex Hull`
+- Shape the band in transform
+- Apply a color to it in the materials tab, like a deep brown
+
+Copy the last step for another band.
+
+
+
