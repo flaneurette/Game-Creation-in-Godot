@@ -108,7 +108,7 @@ Fuse:
 - Add `Curve` -> `Bezier` for a thin fuse wire.
 - Apply a color to it in the materials tab, like a deep brown
 
-> Now make a copy of it, before proceeding. Ctrl+C + Ctrl=V.
+> Now make a copy of it, before proceeding. Ctrl+C + Ctrl+V.
 
 Band:
 
