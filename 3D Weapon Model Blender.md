@@ -108,7 +108,7 @@ Fuse:
 
 Band:
 
-Press A, and Ctrl=J in edit-mode to join everything.
+Press A, and Ctrl+J in edit-mode to join everything.
 
 - In edit-mode, click `Mesh` -> `Convex Hull`
 - Shape the band in transform
