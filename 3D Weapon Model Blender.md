@@ -91,7 +91,9 @@ The pistol now follows the hand during the run animation.
 - `Swapping weapons:` since the pistol is just a child of the BoneAttachment3D, you can show, hide, or replace it in code.
 
 
-# Bonus: Create explosives
+# Bonus: dynamite model
+
+Start new Blender item.
 
 <img src="Examples/Dynamite.png" />
 
