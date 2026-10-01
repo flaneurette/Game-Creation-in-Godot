@@ -45,7 +45,7 @@ Repeat:
 
 Next, limit the animation duration to 150. In the bottom right of the animation editor, there is a small menu: `Start - End`
 
-Set `End` to: `150`
+Set `End` to: `100`
 
 Press Spacebar to see animation.
 
