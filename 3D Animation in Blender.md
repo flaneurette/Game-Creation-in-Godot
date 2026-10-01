@@ -47,6 +47,28 @@ Next, limit the animation duration to 100. In the bottom right of the animation 
 
 Set `End` to: `100`
 
+Export it as: `HealthCoin.glb`
+
 Press Spacebar to see animation.
 
 That is it.
+
+# In Godot
+
+Do the following:
+
+- Double click the GLB file.
+- Under AnimationPlayer there should be an action, perhaps it is called: `Cube_001Action`. Click it. Then in the right menu set `Loop Mode` to `Linear`
+- Click ReImport
+
+Now it is ready to use.
+
+In Godot, you might have to start the animation:
+
+```
+$AnimationPlayer.play("Cube_001Action")
+```
+
+For further scripting the `collectible`, open the readme for: `Collectibles in Godot.md` to understand how to collect the actual object and add it to the player's HUD.
+
+This was it.
