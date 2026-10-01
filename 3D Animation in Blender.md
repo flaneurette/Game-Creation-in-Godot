@@ -87,7 +87,6 @@ In Godot, you might have to start the animation:
 
 ```
 func _ready() -> void:
-	area.body_entered.connect(_on_body_entered)
 	var player: AnimationPlayer = $AnimationPlayer
 	var anim: Animation = player.get_animation("Cube_001Action")
 	anim.loop_mode = Animation.LOOP_LINEAR
