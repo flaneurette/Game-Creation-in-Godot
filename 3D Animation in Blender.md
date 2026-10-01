@@ -1,6 +1,8 @@
 # Animated collectible
 
-Creating an animated collectible is simple.
+Creating a animated collectible is simple.
+
+<img src="Examples/HealthCoin.png" />
 
 #### Create health coin
 
