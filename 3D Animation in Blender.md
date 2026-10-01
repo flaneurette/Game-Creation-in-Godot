@@ -40,6 +40,9 @@ Repeat:
 - Add: `180` in the `Z` `rotation` box.
 - Hover over the object, press `I`, then: `Rotation`.
 
+Then:
+
+Select all keyframes, `A`, then `T` and select `linear` for smooth keyframes.
 
 #### Finish
 
