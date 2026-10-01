@@ -10,7 +10,7 @@ Creating a animated collectible is simple.
 - Add a cylinder, and shape it to a coin.
 - Add two 3D cubes and make them elongated into a cross.
 - Ctrl+J to join the cross.
-- Add bevel to it.
+- Add bevel to it: `modifiers` in `right panel`, add `bevel`.
 
 Add some color to both objects.
 
