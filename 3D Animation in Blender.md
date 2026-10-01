@@ -43,7 +43,7 @@ Repeat:
 
 #### Finish
 
-Next, limit the animation duration to 150. In the bottom right of the animation editor, there is a small menu: `Start - End`
+Next, limit the animation duration to 100. In the bottom right of the animation editor, there is a small menu: `Start - End`
 
 Set `End` to: `100`
 
