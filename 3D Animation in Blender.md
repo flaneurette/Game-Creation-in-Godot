@@ -40,12 +40,6 @@ Repeat:
 - Add: `180` in the `Z` `rotation` box.
 - Hover over the object, press `I`, then: `Rotation`.
 
-Repeat:
-
-- Move the blue needle to position 150.
-- Press `N`
-- Add: `360` in the `Z` `rotation` box.
-- Hover over the object, press `I`, then: `Rotation`.
 
 #### Finish
 
