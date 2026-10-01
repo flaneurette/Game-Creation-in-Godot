@@ -24,23 +24,25 @@ Open animation tab.
 - Rewind the animation needle to zero/one
 - Hover over the object, press `I`, then: Rotation.
 
+> Keyframes will appear in the amination editor. Leave them as is.
+
 Then:
 
-- Move the needle to position 50.
+- Move the blue needle to position 50.
 - Press `N`
 - Add: `90` in the `Z` `rotation` box.
 - Hover over the object, press `I`, then: `Rotation`.
 
 Repeat:
 
-- Move the needle to position 100.
+- Move the blue needle to position 100.
 - Press `N`
 - Add: `180` in the `Z` `rotation` box.
 - Hover over the object, press `I`, then: `Rotation`.
 
 Repeat:
 
-- Move the needle to position 150.
+- Move the blue needle to position 150.
 - Press `N`
 - Add: `360` in the `Z` `rotation` box.
 - Hover over the object, press `I`, then: `Rotation`.
