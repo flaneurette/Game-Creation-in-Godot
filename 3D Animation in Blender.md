@@ -69,7 +69,12 @@ Now it is ready to use.
 In Godot, you might have to start the animation:
 
 ```
-$AnimationPlayer.play("Cube_001Action")
+func _ready() -> void:
+	area.body_entered.connect(_on_body_entered)
+	var player: AnimationPlayer = $AnimationPlayer
+	var anim: Animation = player.get_animation("Cube_001Action")
+	anim.loop_mode = Animation.LOOP_LINEAR
+	player.play("Cube_001Action")
 ```
 
 For further scripting the `collectible`, open the readme for: `Collectibles in Godot.md` to understand how to collect the actual object and add it to the player's HUD.
