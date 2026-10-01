@@ -4,6 +4,23 @@ Creating a animated collectible is simple.
 
 <img src="Examples/HealthCoin.png" />
 
+It is possible to code an animation in Godot:
+
+```
+@export var spin_speed := 2.0  # radians per second
+@onready var area: Area3D = $Area3D
+
+func _ready() -> void:
+	area.body_entered.connect(_on_body_entered)
+
+func _process(delta: float) -> void:
+	rotate_y(spin_speed * delta)  # Y is "up" in Godot
+```
+
+But we want to show how to do it in Blender as well.
+
+So the following tutorial is about creating a Health Coin, and animating it in blender.
+	
 #### Create health coin
 
 - Create new blender document
