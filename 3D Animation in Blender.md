@@ -41,7 +41,7 @@ Open animation tab.
 - Rewind the animation needle to zero/one
 - Hover over the object, press `I`, then: Rotation.
 
-> Keyframes will appear in the amination editor. Leave them as is.
+> Keyframes will appear in the animation editor. Leave them as is.
 
 Then:
 
