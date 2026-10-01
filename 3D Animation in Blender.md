@@ -26,7 +26,7 @@ So the following tutorial is about creating a Health Coin, and animating it in b
 - Create new blender document
 - Add a cylinder, and shape it to a coin.
 - Add two 3D cubes and make them elongated into a cross.
-- `Ctrl+J` to join the cross.
+- `Ctrl+J` to join the cross. (Object -> Join)
 - Add bevel to it: `modifiers` in `right panel`, add `bevel`.
 
 Add some color to both objects.
@@ -73,7 +73,7 @@ Repeat:
   
 Then:
 
-Select all keyframes, `A`, then `T` and select `linear` for smooth keyframes.
+Select all keyframes, `A`, then `T` and select `linear` for constant speed.
 
 #### Finish
 
