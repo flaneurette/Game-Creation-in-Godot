@@ -2,6 +2,8 @@
 
 in Godot 4.7+
 
+- Pinned to: Godot 4.7.2, Blender 2.83.3. for as long as game creation takes place. We do not switch unless we have a finished game.
+
 > Note: this is a living document, it might change each time we progress in our game creation. It is therefore not finished, unless we state it here.
 
 ## Scene Layout
